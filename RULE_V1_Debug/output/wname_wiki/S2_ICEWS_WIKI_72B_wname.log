@@ -1,0 +1,27 @@
+
+[INFO] Processing: DNC_0.0_use_surface_icews_wiki.pkl
+------------------------------------------------------------
+Test Set Results:
+  High: Top1 99.14% | Top5 99.94% | Top10 99.97% | MRR 0.9953 | Count 3273
+  Low: Top1 65.92% | Top5 88.01% | Top10 91.01% | MRR 0.7609 | Count 267
+Top-10 correct: 3515/3540 (99.29%)
+Saved candidates to ./candidate_json/ICEWS/DNC_0.0_use_surface_icews_wiki.json
+------------------------------------------------------------
+
+[INFO] Processing: DNC_0.2_use_surface_icews_wiki.pkl
+------------------------------------------------------------
+Test Set Results:
+  High: Top1 99.26% | Top5 99.94% | Top10 99.97% | MRR 0.9960 | Count 3233
+  Low: Top1 60.91% | Top5 86.97% | Top10 91.21% | MRR 0.7260 | Count 307
+Top-10 correct: 3512/3540 (99.21%)
+Saved candidates to ./candidate_json/ICEWS/DNC_0.2_use_surface_icews_wiki.json
+------------------------------------------------------------
+
+[INFO] Processing: DNC_0.5_use_surface_icews_wiki.pkl
+------------------------------------------------------------
+Test Set Results:
+  High: Top1 99.32% | Top5 99.94% | Top10 99.97% | MRR 0.9963 | Count 3082
+  Low: Top1 62.66% | Top5 82.75% | Top10 85.59% | MRR 0.7162 | Count 458
+Top-10 correct: 3473/3540 (98.11%)
+Saved candidates to ./candidate_json/ICEWS/DNC_0.5_use_surface_icews_wiki.json
+------------------------------------------------------------

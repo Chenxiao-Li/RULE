@@ -1,0 +1,469 @@
+/home/UNT/cl1179/code/RULE/main_ICEWS.py:34: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = GradScaler()
+/home/UNT/cl1179/code/RULE/src/utils.py:279: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at /opt/conda/conda-bld/pytorch_1728929558238/work/torch/csrc/utils/tensor_new.cpp:651.)
+  return torch.sparse.FloatTensor(indices, values, shape)
+2026-07-05 20:56:16,523 - INFO - 100.00% entities have images
+2026-07-05 20:56:16,900 - INFO - missing img features ratio: 0.00%
+2026-07-05 20:56:16,979 - INFO - image feature shape:(26943, 768)
+2026-07-05 20:56:17,046 - INFO - name feature shape:(26943, 768)
+2026-07-05 20:56:17,050 - INFO - #left entity : 11047, #right entity: 15896
+2026-07-05 20:56:17,050 - INFO - #left entity not in train set: 9529, #right entity not in train set: 14382
+2026-07-05 20:56:19,679 - INFO - relation feature shape:(26943, 1000)
+2026-07-05 20:56:19,679 - INFO - -----dataset summary-----
+2026-07-05 20:56:19,679 - INFO - dataset:		 /home/UNT/cl1179/code/RULE/data/ICEWS/icews_wiki
+2026-07-05 20:56:19,679 - INFO - triple num:	 3726138
+2026-07-05 20:56:19,679 - INFO - entity num:	 26943
+2026-07-05 20:56:19,679 - INFO - relation num:	 496
+2026-07-05 20:56:19,679 - INFO - train ill num:	 1518 	 test ill num:	 3540
+2026-07-05 20:56:19,679 - INFO - -------------------------
+loading raw data...
+getting a sparse tensor r_adj...
+  0%|          | 0/40 [00:00<?, ?it/s]Train | Ep [0/40] LR [0.00100] Loss 7.8145:   0%|          | 0/40 [00:01<?, ?it/s]Train | Ep [0/40] LR [0.00100] Loss 7.8145:   2%|▎         | 1/40 [00:01<00:48,  1.25s/it]2026-07-05 20:56:21,807 - INFO - loss/structure_loss: 2.0344
+2026-07-05 20:56:21,807 - INFO - loss/image_loss: 1.9770
+2026-07-05 20:56:21,807 - INFO - loss/name_loss: 1.8727
+2026-07-05 20:56:21,807 - INFO - loss/loss_all: 7.8145
+2026-07-05 20:56:21,807 - INFO - loss/loss_entity: 1.9304
+2026-07-05 20:56:21,807 - INFO - loss/loss_attribute: 5.8841
+2026-07-05 20:56:21,808 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:22,462 - INFO - Ep 0 | l2r: acc of top [1, 5, 10] = [0.8336 0.9121 0.9331], mr = 8.5056, mrr = 0.8699
+2026-07-05 20:56:22,462 - INFO - Ep 0 | r2l: acc of top [1, 5, 10] = [0.8345 0.915  0.937 ], mr = 6.8969, mrr = 0.8723
+2026-07-05 20:56:22,462 - INFO - Best model update in Ep 0: MRR from [0.0000] --> [0.8723]
+2026-07-05 20:56:22,481 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+Train | Ep [1/40] LR [0.00100] Loss 7.4246:   2%|▎         | 1/40 [00:02<00:48,  1.25s/it]Train | Ep [1/40] LR [0.00100] Loss 7.4246:   5%|▌         | 2/40 [00:02<00:46,  1.22s/it]2026-07-05 20:56:23,013 - INFO - loss/structure_loss: 2.0126
+2026-07-05 20:56:23,013 - INFO - loss/image_loss: 1.9014
+2026-07-05 20:56:23,013 - INFO - loss/name_loss: 1.6988
+2026-07-05 20:56:23,013 - INFO - loss/loss_all: 7.4246
+2026-07-05 20:56:23,013 - INFO - loss/loss_entity: 1.8127
+2026-07-05 20:56:23,013 - INFO - loss/loss_attribute: 5.6118
+2026-07-05 20:56:23,013 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:23,644 - INFO - Ep 1 | l2r: acc of top [1, 5, 10] = [0.8644 0.9314 0.9506], mr = 5.7494, mrr = 0.8955
+2026-07-05 20:56:23,644 - INFO - Ep 1 | r2l: acc of top [1, 5, 10] = [0.8655 0.9362 0.9542], mr = 5.3243, mrr = 0.8981
+2026-07-05 20:56:23,645 - INFO - Best model update in Ep 1: MRR from [0.8723] --> [0.8981]
+2026-07-05 20:56:23,667 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+Train | Ep [2/40] LR [0.00100] Loss 6.8885:   5%|▌         | 2/40 [00:03<00:46,  1.22s/it]Train | Ep [2/40] LR [0.00100] Loss 6.8885:   8%|▊         | 3/40 [00:03<00:44,  1.21s/it]2026-07-05 20:56:24,198 - INFO - loss/structure_loss: 1.9900
+2026-07-05 20:56:24,198 - INFO - loss/image_loss: 1.7988
+2026-07-05 20:56:24,198 - INFO - loss/name_loss: 1.4440
+2026-07-05 20:56:24,199 - INFO - loss/loss_all: 6.8885
+2026-07-05 20:56:24,199 - INFO - loss/loss_entity: 1.6590
+2026-07-05 20:56:24,199 - INFO - loss/loss_attribute: 5.2295
+2026-07-05 20:56:24,199 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:24,835 - INFO - Ep 2 | l2r: acc of top [1, 5, 10] = [0.8726 0.935  0.9508], mr = 5.4364, mrr = 0.9012
+2026-07-05 20:56:24,836 - INFO - Ep 2 | r2l: acc of top [1, 5, 10] = [0.872  0.9401 0.9568], mr = 5.0432, mrr = 0.9028
+2026-07-05 20:56:24,836 - INFO - Best model update in Ep 2: MRR from [0.8981] --> [0.9028]
+2026-07-05 20:56:24,853 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+Train | Ep [3/40] LR [0.00100] Loss 6.3805:   8%|▊         | 3/40 [00:04<00:44,  1.21s/it]Train | Ep [3/40] LR [0.00100] Loss 6.3805:  10%|█         | 4/40 [00:04<00:43,  1.20s/it]2026-07-05 20:56:25,382 - INFO - loss/structure_loss: 1.9632
+2026-07-05 20:56:25,382 - INFO - loss/image_loss: 1.7043
+2026-07-05 20:56:25,382 - INFO - loss/name_loss: 1.2316
+2026-07-05 20:56:25,382 - INFO - loss/loss_all: 6.3805
+2026-07-05 20:56:25,382 - INFO - loss/loss_entity: 1.4880
+2026-07-05 20:56:25,382 - INFO - loss/loss_attribute: 4.8924
+2026-07-05 20:56:25,382 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:26,011 - INFO - Ep 3 | l2r: acc of top [1, 5, 10] = [0.8825 0.941  0.9582], mr = 5.0127, mrr = 0.9090
+2026-07-05 20:56:26,011 - INFO - Ep 3 | r2l: acc of top [1, 5, 10] = [0.8805 0.9486 0.9633], mr = 4.0508, mrr = 0.9114
+2026-07-05 20:56:26,011 - INFO - Best model update in Ep 3: MRR from [0.9028] --> [0.9114]
+2026-07-05 20:56:26,031 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+Train | Ep [4/40] LR [0.00100] Loss 6.0936:  10%|█         | 4/40 [00:06<00:43,  1.20s/it]Train | Ep [4/40] LR [0.00100] Loss 6.0936:  12%|█▎        | 5/40 [00:06<00:41,  1.19s/it]2026-07-05 20:56:26,559 - INFO - loss/structure_loss: 1.9310
+2026-07-05 20:56:26,559 - INFO - loss/image_loss: 1.6557
+2026-07-05 20:56:26,559 - INFO - loss/name_loss: 1.1394
+2026-07-05 20:56:26,559 - INFO - loss/loss_all: 6.0936
+2026-07-05 20:56:26,559 - INFO - loss/loss_entity: 1.3772
+2026-07-05 20:56:26,559 - INFO - loss/loss_attribute: 4.7164
+2026-07-05 20:56:26,560 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:27,189 - INFO - Ep 4 | l2r: acc of top [1, 5, 10] = [0.8944 0.9508 0.9669], mr = 3.9133, mrr = 0.9203
+2026-07-05 20:56:27,189 - INFO - Ep 4 | r2l: acc of top [1, 5, 10] = [0.8938 0.9571 0.9684], mr = 3.1893, mrr = 0.9228
+2026-07-05 20:56:27,189 - INFO - Best model update in Ep 4: MRR from [0.9114] --> [0.9228]
+2026-07-05 20:56:27,207 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+Train | Ep [5/40] LR [0.00100] Loss 5.8990:  12%|█▎        | 5/40 [00:07<00:41,  1.19s/it]Train | Ep [5/40] LR [0.00100] Loss 5.8990:  15%|█▌        | 6/40 [00:07<00:40,  1.18s/it]2026-07-05 20:56:27,734 - INFO - loss/structure_loss: 1.9170
+2026-07-05 20:56:27,734 - INFO - loss/image_loss: 1.6161
+2026-07-05 20:56:27,734 - INFO - loss/name_loss: 1.0787
+2026-07-05 20:56:27,734 - INFO - loss/loss_all: 5.8990
+2026-07-05 20:56:27,734 - INFO - loss/loss_entity: 1.3005
+2026-07-05 20:56:27,734 - INFO - loss/loss_attribute: 4.5985
+2026-07-05 20:56:27,734 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:28,348 - INFO - Ep 5 | l2r: acc of top [1, 5, 10] = [0.9073 0.9602 0.9729], mr = 3.3636, mrr = 0.9310
+2026-07-05 20:56:28,349 - INFO - Ep 5 | r2l: acc of top [1, 5, 10] = [0.9062 0.9627 0.9749], mr = 2.8119, mrr = 0.9330
+2026-07-05 20:56:28,349 - INFO - Best model update in Ep 5: MRR from [0.9228] --> [0.9330]
+2026-07-05 20:56:28,368 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+Train | Ep [6/40] LR [0.00100] Loss 5.7309:  15%|█▌        | 6/40 [00:08<00:40,  1.18s/it]Train | Ep [6/40] LR [0.00100] Loss 5.7309:  18%|█▊        | 7/40 [00:08<00:38,  1.18s/it]2026-07-05 20:56:28,896 - INFO - loss/structure_loss: 1.8773
+2026-07-05 20:56:28,896 - INFO - loss/image_loss: 1.5933
+2026-07-05 20:56:28,896 - INFO - loss/name_loss: 1.0380
+2026-07-05 20:56:28,896 - INFO - loss/loss_all: 5.7309
+2026-07-05 20:56:28,896 - INFO - loss/loss_entity: 1.2390
+2026-07-05 20:56:28,896 - INFO - loss/loss_attribute: 4.4919
+2026-07-05 20:56:28,896 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:29,528 - INFO - Ep 6 | l2r: acc of top [1, 5, 10] = [0.9178 0.9675 0.9785], mr = 2.9862, mrr = 0.9399
+2026-07-05 20:56:29,528 - INFO - Ep 6 | r2l: acc of top [1, 5, 10] = [0.9206 0.9692 0.9802], mr = 2.4743, mrr = 0.9432
+2026-07-05 20:56:29,528 - INFO - Best model update in Ep 6: MRR from [0.9330] --> [0.9432]
+2026-07-05 20:56:29,546 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+Train | Ep [7/40] LR [0.00100] Loss 5.5117:  18%|█▊        | 7/40 [00:09<00:38,  1.18s/it]Train | Ep [7/40] LR [0.00100] Loss 5.5117:  20%|██        | 8/40 [00:09<00:37,  1.18s/it]2026-07-05 20:56:30,074 - INFO - loss/structure_loss: 1.8432
+2026-07-05 20:56:30,074 - INFO - loss/image_loss: 1.5477
+2026-07-05 20:56:30,074 - INFO - loss/name_loss: 0.9726
+2026-07-05 20:56:30,074 - INFO - loss/loss_all: 5.5117
+2026-07-05 20:56:30,074 - INFO - loss/loss_entity: 1.1696
+2026-07-05 20:56:30,074 - INFO - loss/loss_attribute: 4.3421
+2026-07-05 20:56:30,075 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:30,697 - INFO - Ep 7 | l2r: acc of top [1, 5, 10] = [0.9257 0.9729 0.9819], mr = 2.6630, mrr = 0.9467
+2026-07-05 20:56:30,698 - INFO - Ep 7 | r2l: acc of top [1, 5, 10] = [0.9277 0.9743 0.9833], mr = 2.1647, mrr = 0.9490
+2026-07-05 20:56:30,698 - INFO - Best model update in Ep 7: MRR from [0.9432] --> [0.9490]
+2026-07-05 20:56:30,716 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+Train | Ep [8/40] LR [0.00100] Loss 5.4335:  20%|██        | 8/40 [00:10<00:37,  1.18s/it]Train | Ep [8/40] LR [0.00100] Loss 5.4335:  22%|██▎       | 9/40 [00:10<00:36,  1.17s/it]2026-07-05 20:56:31,243 - INFO - loss/structure_loss: 1.8105
+2026-07-05 20:56:31,243 - INFO - loss/image_loss: 1.5491
+2026-07-05 20:56:31,243 - INFO - loss/name_loss: 0.9703
+2026-07-05 20:56:31,243 - INFO - loss/loss_all: 5.4335
+2026-07-05 20:56:31,243 - INFO - loss/loss_entity: 1.1286
+2026-07-05 20:56:31,243 - INFO - loss/loss_attribute: 4.3049
+2026-07-05 20:56:31,243 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:31,861 - INFO - Ep 8 | l2r: acc of top [1, 5, 10] = [0.9316 0.9754 0.9833], mr = 2.4881, mrr = 0.9514
+2026-07-05 20:56:31,861 - INFO - Ep 8 | r2l: acc of top [1, 5, 10] = [0.9322 0.976  0.9842], mr = 1.9944, mrr = 0.9527
+2026-07-05 20:56:31,861 - INFO - Best model update in Ep 8: MRR from [0.9490] --> [0.9527]
+2026-07-05 20:56:31,880 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+Train | Ep [9/40] LR [0.00100] Loss 5.2101:  22%|██▎       | 9/40 [00:11<00:36,  1.17s/it]Train | Ep [9/40] LR [0.00100] Loss 5.2101:  25%|██▌       | 10/40 [00:11<00:35,  1.17s/it]2026-07-05 20:56:32,407 - INFO - loss/structure_loss: 1.7582
+2026-07-05 20:56:32,407 - INFO - loss/image_loss: 1.5108
+2026-07-05 20:56:32,407 - INFO - loss/name_loss: 0.9149
+2026-07-05 20:56:32,407 - INFO - loss/loss_all: 5.2101
+2026-07-05 20:56:32,407 - INFO - loss/loss_entity: 1.0567
+2026-07-05 20:56:32,407 - INFO - loss/loss_attribute: 4.1534
+2026-07-05 20:56:32,407 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:33,016 - INFO - Ep 9 | l2r: acc of top [1, 5, 10] = [0.9362 0.9777 0.9847], mr = 2.3647, mrr = 0.9551
+2026-07-05 20:56:33,016 - INFO - Ep 9 | r2l: acc of top [1, 5, 10] = [0.9379 0.9788 0.987 ], mr = 1.9195, mrr = 0.9568
+2026-07-05 20:56:33,016 - INFO - Best model update in Ep 9: MRR from [0.9527] --> [0.9568]
+2026-07-05 20:56:33,034 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+2026-07-05 20:56:33,106 - INFO - ---------modality_freezing--------
+Train | Ep [10/40] LR [0.00100] Loss 2.3040:  25%|██▌       | 10/40 [00:13<00:35,  1.17s/it]Train | Ep [10/40] LR [0.00100] Loss 2.3040:  28%|██▊       | 11/40 [00:13<00:34,  1.18s/it]2026-07-05 20:56:33,602 - INFO - loss/structure_loss: 0.8645
+2026-07-05 20:56:33,602 - INFO - loss/image_loss: 0.6414
+2026-07-05 20:56:33,602 - INFO - loss/name_loss: 0.4456
+2026-07-05 20:56:33,602 - INFO - loss/loss_all: 2.3040
+2026-07-05 20:56:33,602 - INFO - loss/loss_entity: 0.4207
+2026-07-05 20:56:33,602 - INFO - loss/loss_attribute: 1.8832
+2026-07-05 20:56:33,603 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:34,218 - INFO - Ep 10 | l2r: acc of top [1, 5, 10] = [0.9438 0.9768 0.9845], mr = 2.3927, mrr = 0.9592
+2026-07-05 20:56:34,219 - INFO - Ep 10 | r2l: acc of top [1, 5, 10] = [0.9404 0.9768 0.9839], mr = 1.8915, mrr = 0.9578
+2026-07-05 20:56:34,219 - INFO - Best model update in Ep 10: MRR from [0.9568] --> [0.9592]
+2026-07-05 20:56:34,241 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+2026-07-05 20:56:34,311 - INFO - ---------modality_freezing--------
+Train | Ep [11/40] LR [0.00100] Loss 2.2378:  28%|██▊       | 11/40 [00:14<00:34,  1.18s/it]Train | Ep [11/40] LR [0.00100] Loss 2.2378:  30%|███       | 12/40 [00:14<00:33,  1.18s/it]2026-07-05 20:56:34,800 - INFO - loss/structure_loss: 0.8520
+2026-07-05 20:56:34,801 - INFO - loss/image_loss: 0.6238
+2026-07-05 20:56:34,801 - INFO - loss/name_loss: 0.4359
+2026-07-05 20:56:34,801 - INFO - loss/loss_all: 2.2378
+2026-07-05 20:56:34,801 - INFO - loss/loss_entity: 0.4038
+2026-07-05 20:56:34,801 - INFO - loss/loss_attribute: 1.8340
+2026-07-05 20:56:34,801 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:35,425 - INFO - Ep 11 | l2r: acc of top [1, 5, 10] = [0.9458 0.9791 0.985 ], mr = 2.1463, mrr = 0.9613
+2026-07-05 20:56:35,426 - INFO - Ep 11 | r2l: acc of top [1, 5, 10] = [0.9452 0.9811 0.9853], mr = 1.7322, mrr = 0.9611
+2026-07-05 20:56:35,426 - INFO - Best model update in Ep 11: MRR from [0.9592] --> [0.9613]
+2026-07-05 20:56:35,445 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+2026-07-05 20:56:35,515 - INFO - ---------modality_freezing--------
+Train | Ep [12/40] LR [0.00100] Loss 2.1679:  30%|███       | 12/40 [00:15<00:33,  1.18s/it]Train | Ep [12/40] LR [0.00100] Loss 2.1679:  32%|███▎      | 13/40 [00:15<00:32,  1.19s/it]2026-07-05 20:56:36,005 - INFO - loss/structure_loss: 0.8362
+2026-07-05 20:56:36,005 - INFO - loss/image_loss: 0.6166
+2026-07-05 20:56:36,005 - INFO - loss/name_loss: 0.4148
+2026-07-05 20:56:36,005 - INFO - loss/loss_all: 2.1679
+2026-07-05 20:56:36,005 - INFO - loss/loss_entity: 0.3879
+2026-07-05 20:56:36,005 - INFO - loss/loss_attribute: 1.7800
+2026-07-05 20:56:36,005 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:36,626 - INFO - Ep 12 | l2r: acc of top [1, 5, 10] = [0.9472 0.9785 0.985 ], mr = 2.4986, mrr = 0.9619
+2026-07-05 20:56:36,627 - INFO - Ep 12 | r2l: acc of top [1, 5, 10] = [0.9458 0.9799 0.9853], mr = 1.8828, mrr = 0.9620
+2026-07-05 20:56:36,627 - INFO - Best model update in Ep 12: MRR from [0.9613] --> [0.9620]
+2026-07-05 20:56:36,646 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+2026-07-05 20:56:36,715 - INFO - ---------modality_freezing--------
+Train | Ep [13/40] LR [0.00100] Loss 2.1557:  32%|███▎      | 13/40 [00:16<00:32,  1.19s/it]Train | Ep [13/40] LR [0.00100] Loss 2.1557:  35%|███▌      | 14/40 [00:16<00:31,  1.19s/it]2026-07-05 20:56:37,204 - INFO - loss/structure_loss: 0.8300
+2026-07-05 20:56:37,204 - INFO - loss/image_loss: 0.6220
+2026-07-05 20:56:37,204 - INFO - loss/name_loss: 0.4111
+2026-07-05 20:56:37,204 - INFO - loss/loss_all: 2.1557
+2026-07-05 20:56:37,204 - INFO - loss/loss_entity: 0.3900
+2026-07-05 20:56:37,204 - INFO - loss/loss_attribute: 1.7657
+2026-07-05 20:56:37,204 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:37,814 - INFO - Ep 13 | l2r: acc of top [1, 5, 10] = [0.9492 0.9816 0.9881], mr = 2.2452, mrr = 0.9641
+2026-07-05 20:56:37,815 - INFO - Ep 13 | r2l: acc of top [1, 5, 10] = [0.9506 0.9825 0.9876], mr = 1.7794, mrr = 0.9653
+2026-07-05 20:56:37,815 - INFO - Best model update in Ep 13: MRR from [0.9620] --> [0.9653]
+2026-07-05 20:56:37,834 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+2026-07-05 20:56:37,903 - INFO - ---------modality_freezing--------
+Train | Ep [14/40] LR [0.00100] Loss 2.0884:  35%|███▌      | 14/40 [00:17<00:31,  1.19s/it]Train | Ep [14/40] LR [0.00100] Loss 2.0884:  38%|███▊      | 15/40 [00:17<00:29,  1.19s/it]2026-07-05 20:56:38,394 - INFO - loss/structure_loss: 0.8078
+2026-07-05 20:56:38,394 - INFO - loss/image_loss: 0.6142
+2026-07-05 20:56:38,394 - INFO - loss/name_loss: 0.4065
+2026-07-05 20:56:38,394 - INFO - loss/loss_all: 2.0884
+2026-07-05 20:56:38,394 - INFO - loss/loss_entity: 0.3679
+2026-07-05 20:56:38,394 - INFO - loss/loss_attribute: 1.7205
+2026-07-05 20:56:38,394 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:39,016 - INFO - Ep 14 | l2r: acc of top [1, 5, 10] = [0.95   0.9814 0.9881], mr = 2.2395, mrr = 0.9650
+2026-07-05 20:56:39,016 - INFO - Ep 14 | r2l: acc of top [1, 5, 10] = [0.9508 0.9825 0.989 ], mr = 1.6655, mrr = 0.9658
+2026-07-05 20:56:39,016 - INFO - Best model update in Ep 14: MRR from [0.9653] --> [0.9658]
+2026-07-05 20:56:39,036 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+2026-07-05 20:56:39,106 - INFO - ---------modality_freezing--------
+Train | Ep [15/40] LR [0.00100] Loss 2.0418:  38%|███▊      | 15/40 [00:19<00:29,  1.19s/it]Train | Ep [15/40] LR [0.00100] Loss 2.0418:  40%|████      | 16/40 [00:19<00:28,  1.20s/it]2026-07-05 20:56:39,596 - INFO - loss/structure_loss: 0.7921
+2026-07-05 20:56:39,596 - INFO - loss/image_loss: 0.6009
+2026-07-05 20:56:39,596 - INFO - loss/name_loss: 0.4039
+2026-07-05 20:56:39,596 - INFO - loss/loss_all: 2.0418
+2026-07-05 20:56:39,596 - INFO - loss/loss_entity: 0.3638
+2026-07-05 20:56:39,596 - INFO - loss/loss_attribute: 1.6780
+2026-07-05 20:56:39,597 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:40,209 - INFO - Ep 15 | l2r: acc of top [1, 5, 10] = [0.9528 0.9828 0.9895], mr = 2.3127, mrr = 0.9670
+2026-07-05 20:56:40,210 - INFO - Ep 15 | r2l: acc of top [1, 5, 10] = [0.952  0.9831 0.9887], mr = 1.6127, mrr = 0.9666
+2026-07-05 20:56:40,210 - INFO - Best model update in Ep 15: MRR from [0.9658] --> [0.9670]
+2026-07-05 20:56:40,229 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+2026-07-05 20:56:40,298 - INFO - ---------modality_freezing--------
+Train | Ep [16/40] LR [0.00100] Loss 1.9691:  40%|████      | 16/40 [00:20<00:28,  1.20s/it]Train | Ep [16/40] LR [0.00100] Loss 1.9691:  42%|████▎     | 17/40 [00:20<00:27,  1.20s/it]2026-07-05 20:56:40,791 - INFO - loss/structure_loss: 0.7684
+2026-07-05 20:56:40,791 - INFO - loss/image_loss: 0.5990
+2026-07-05 20:56:40,791 - INFO - loss/name_loss: 0.3862
+2026-07-05 20:56:40,791 - INFO - loss/loss_all: 1.9691
+2026-07-05 20:56:40,791 - INFO - loss/loss_entity: 0.3461
+2026-07-05 20:56:40,791 - INFO - loss/loss_attribute: 1.6230
+2026-07-05 20:56:40,791 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:41,400 - INFO - Ep 16 | l2r: acc of top [1, 5, 10] = [0.9534 0.9831 0.9881], mr = 2.3229, mrr = 0.9675
+2026-07-05 20:56:41,401 - INFO - Ep 16 | r2l: acc of top [1, 5, 10] = [0.9531 0.9842 0.9901], mr = 1.6226, mrr = 0.9674
+2026-07-05 20:56:41,401 - INFO - Best model update in Ep 16: MRR from [0.9670] --> [0.9675]
+2026-07-05 20:56:41,420 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+2026-07-05 20:56:41,490 - INFO - ---------modality_freezing--------
+Train | Ep [17/40] LR [0.00100] Loss 1.9281:  42%|████▎     | 17/40 [00:21<00:27,  1.20s/it]Train | Ep [17/40] LR [0.00100] Loss 1.9281:  45%|████▌     | 18/40 [00:21<00:26,  1.19s/it]2026-07-05 20:56:41,980 - INFO - loss/structure_loss: 0.7576
+2026-07-05 20:56:41,980 - INFO - loss/image_loss: 0.5899
+2026-07-05 20:56:41,980 - INFO - loss/name_loss: 0.3862
+2026-07-05 20:56:41,980 - INFO - loss/loss_all: 1.9281
+2026-07-05 20:56:41,980 - INFO - loss/loss_entity: 0.3360
+2026-07-05 20:56:41,980 - INFO - loss/loss_attribute: 1.5921
+2026-07-05 20:56:41,980 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:42,583 - INFO - Ep 17 | l2r: acc of top [1, 5, 10] = [0.9556 0.9847 0.9904], mr = 2.4161, mrr = 0.9692
+2026-07-05 20:56:42,584 - INFO - Ep 17 | r2l: acc of top [1, 5, 10] = [0.9545 0.9859 0.9901], mr = 1.6506, mrr = 0.9689
+2026-07-05 20:56:42,584 - INFO - Best model update in Ep 17: MRR from [0.9675] --> [0.9692]
+2026-07-05 20:56:42,604 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+2026-07-05 20:56:42,676 - INFO - ---------modality_freezing--------
+Train | Ep [18/40] LR [0.00100] Loss 1.8872:  45%|████▌     | 18/40 [00:22<00:26,  1.19s/it]Train | Ep [18/40] LR [0.00100] Loss 1.8872:  48%|████▊     | 19/40 [00:22<00:25,  1.19s/it]2026-07-05 20:56:43,167 - INFO - loss/structure_loss: 0.7525
+2026-07-05 20:56:43,167 - INFO - loss/image_loss: 0.5912
+2026-07-05 20:56:43,167 - INFO - loss/name_loss: 0.3682
+2026-07-05 20:56:43,168 - INFO - loss/loss_all: 1.8872
+2026-07-05 20:56:43,168 - INFO - loss/loss_entity: 0.3285
+2026-07-05 20:56:43,168 - INFO - loss/loss_attribute: 1.5588
+2026-07-05 20:56:43,168 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:43,777 - INFO - Ep 18 | l2r: acc of top [1, 5, 10] = [0.9548 0.9842 0.991 ], mr = 2.1311, mrr = 0.9687
+2026-07-05 20:56:43,777 - INFO - Ep 18 | r2l: acc of top [1, 5, 10] = [0.9565 0.9847 0.9918], mr = 1.5760, mrr = 0.9699
+2026-07-05 20:56:43,777 - INFO - Best model update in Ep 18: MRR from [0.9692] --> [0.9699]
+2026-07-05 20:56:43,797 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+2026-07-05 20:56:43,868 - INFO - ---------modality_freezing--------
+Train | Ep [19/40] LR [0.00100] Loss 1.8801:  48%|████▊     | 19/40 [00:23<00:25,  1.19s/it]Train | Ep [19/40] LR [0.00100] Loss 1.8801:  50%|█████     | 20/40 [00:23<00:23,  1.19s/it]2026-07-05 20:56:44,361 - INFO - loss/structure_loss: 0.7435
+2026-07-05 20:56:44,361 - INFO - loss/image_loss: 0.5838
+2026-07-05 20:56:44,361 - INFO - loss/name_loss: 0.3838
+2026-07-05 20:56:44,361 - INFO - loss/loss_all: 1.8801
+2026-07-05 20:56:44,361 - INFO - loss/loss_entity: 0.3326
+2026-07-05 20:56:44,361 - INFO - loss/loss_attribute: 1.5474
+2026-07-05 20:56:44,361 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:44,971 - INFO - Ep 19 | l2r: acc of top [1, 5, 10] = [0.9554 0.9839 0.9898], mr = 2.1641, mrr = 0.9685
+2026-07-05 20:56:44,971 - INFO - Ep 19 | r2l: acc of top [1, 5, 10] = [0.9551 0.9831 0.9895], mr = 1.6266, mrr = 0.9684
+2026-07-05 20:56:45,041 - INFO - ---------modality_freezing--------
+Train | Ep [20/40] LR [0.00100] Loss 1.8064:  50%|█████     | 20/40 [00:24<00:23,  1.19s/it]Train | Ep [20/40] LR [0.00100] Loss 1.8064:  52%|█████▎    | 21/40 [00:24<00:22,  1.19s/it]2026-07-05 20:56:45,533 - INFO - loss/structure_loss: 0.7194
+2026-07-05 20:56:45,533 - INFO - loss/image_loss: 0.5669
+2026-07-05 20:56:45,533 - INFO - loss/name_loss: 0.3757
+2026-07-05 20:56:45,533 - INFO - loss/loss_all: 1.8064
+2026-07-05 20:56:45,533 - INFO - loss/loss_entity: 0.3207
+2026-07-05 20:56:45,533 - INFO - loss/loss_attribute: 1.4857
+2026-07-05 20:56:45,533 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:46,137 - INFO - Ep 20 | l2r: acc of top [1, 5, 10] = [0.9605 0.9853 0.9907], mr = 1.9887, mrr = 0.9720
+2026-07-05 20:56:46,138 - INFO - Ep 20 | r2l: acc of top [1, 5, 10] = [0.9593 0.985  0.991 ], mr = 1.5458, mrr = 0.9714
+2026-07-05 20:56:46,138 - INFO - Best model update in Ep 20: MRR from [0.9699] --> [0.9720]
+2026-07-05 20:56:46,157 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+2026-07-05 20:56:46,224 - INFO - ---------modality_freezing--------
+Train | Ep [21/40] LR [0.00100] Loss 1.7679:  52%|█████▎    | 21/40 [00:26<00:22,  1.19s/it]Train | Ep [21/40] LR [0.00100] Loss 1.7679:  55%|█████▌    | 22/40 [00:26<00:21,  1.19s/it]2026-07-05 20:56:46,718 - INFO - loss/structure_loss: 0.7111
+2026-07-05 20:56:46,718 - INFO - loss/image_loss: 0.5626
+2026-07-05 20:56:46,718 - INFO - loss/name_loss: 0.3702
+2026-07-05 20:56:46,718 - INFO - loss/loss_all: 1.7679
+2026-07-05 20:56:46,718 - INFO - loss/loss_entity: 0.3118
+2026-07-05 20:56:46,718 - INFO - loss/loss_attribute: 1.4561
+2026-07-05 20:56:46,718 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:47,336 - INFO - Ep 21 | l2r: acc of top [1, 5, 10] = [0.9613 0.9876 0.9915], mr = 1.9229, mrr = 0.9729
+2026-07-05 20:56:47,337 - INFO - Ep 21 | r2l: acc of top [1, 5, 10] = [0.9599 0.9867 0.9907], mr = 1.5342, mrr = 0.9729
+2026-07-05 20:56:47,337 - INFO - Best model update in Ep 21: MRR from [0.9720] --> [0.9729]
+2026-07-05 20:56:47,356 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+2026-07-05 20:56:47,425 - INFO - ---------modality_freezing--------
+Train | Ep [22/40] LR [0.00100] Loss 1.7359:  55%|█████▌    | 22/40 [00:27<00:21,  1.19s/it]Train | Ep [22/40] LR [0.00100] Loss 1.7359:  57%|█████▊    | 23/40 [00:27<00:20,  1.19s/it]2026-07-05 20:56:47,917 - INFO - loss/structure_loss: 0.7227
+2026-07-05 20:56:47,917 - INFO - loss/image_loss: 0.5586
+2026-07-05 20:56:47,917 - INFO - loss/name_loss: 0.3501
+2026-07-05 20:56:47,917 - INFO - loss/loss_all: 1.7359
+2026-07-05 20:56:47,917 - INFO - loss/loss_entity: 0.3038
+2026-07-05 20:56:47,917 - INFO - loss/loss_attribute: 1.4320
+2026-07-05 20:56:47,918 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:48,525 - INFO - Ep 22 | l2r: acc of top [1, 5, 10] = [0.9599 0.9859 0.9912], mr = 1.9633, mrr = 0.9718
+2026-07-05 20:56:48,526 - INFO - Ep 22 | r2l: acc of top [1, 5, 10] = [0.9588 0.987  0.9912], mr = 1.5065, mrr = 0.9721
+2026-07-05 20:56:48,595 - INFO - ---------modality_freezing--------
+Train | Ep [23/40] LR [0.00100] Loss 1.6766:  57%|█████▊    | 23/40 [00:28<00:20,  1.19s/it]Train | Ep [23/40] LR [0.00100] Loss 1.6766:  60%|██████    | 24/40 [00:28<00:18,  1.18s/it]2026-07-05 20:56:49,089 - INFO - loss/structure_loss: 0.6923
+2026-07-05 20:56:49,089 - INFO - loss/image_loss: 0.5522
+2026-07-05 20:56:49,089 - INFO - loss/name_loss: 0.3484
+2026-07-05 20:56:49,089 - INFO - loss/loss_all: 1.6766
+2026-07-05 20:56:49,089 - INFO - loss/loss_entity: 0.2955
+2026-07-05 20:56:49,089 - INFO - loss/loss_attribute: 1.3811
+2026-07-05 20:56:49,089 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:49,689 - INFO - Ep 23 | l2r: acc of top [1, 5, 10] = [0.9624 0.9876 0.9921], mr = 1.8435, mrr = 0.9741
+2026-07-05 20:56:49,689 - INFO - Ep 23 | r2l: acc of top [1, 5, 10] = [0.9616 0.9879 0.9927], mr = 1.4023, mrr = 0.9739
+2026-07-05 20:56:49,689 - INFO - Best model update in Ep 23: MRR from [0.9729] --> [0.9741]
+2026-07-05 20:56:49,709 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+2026-07-05 20:56:49,778 - INFO - ---------modality_freezing--------
+Train | Ep [24/40] LR [0.00100] Loss 1.6646:  60%|██████    | 24/40 [00:29<00:18,  1.18s/it]Train | Ep [24/40] LR [0.00100] Loss 1.6646:  62%|██████▎   | 25/40 [00:29<00:17,  1.18s/it]2026-07-05 20:56:50,272 - INFO - loss/structure_loss: 0.6864
+2026-07-05 20:56:50,272 - INFO - loss/image_loss: 0.5640
+2026-07-05 20:56:50,272 - INFO - loss/name_loss: 0.3450
+2026-07-05 20:56:50,272 - INFO - loss/loss_all: 1.6646
+2026-07-05 20:56:50,272 - INFO - loss/loss_entity: 0.2917
+2026-07-05 20:56:50,272 - INFO - loss/loss_attribute: 1.3729
+2026-07-05 20:56:50,272 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:50,887 - INFO - Ep 24 | l2r: acc of top [1, 5, 10] = [0.9633 0.987  0.991 ], mr = 1.8729, mrr = 0.9742
+2026-07-05 20:56:50,887 - INFO - Ep 24 | r2l: acc of top [1, 5, 10] = [0.9607 0.9862 0.9918], mr = 1.4887, mrr = 0.9732
+2026-07-05 20:56:50,887 - INFO - Best model update in Ep 24: MRR from [0.9741] --> [0.9742]
+2026-07-05 20:56:50,904 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+2026-07-05 20:56:50,972 - INFO - ---------modality_freezing--------
+Train | Ep [25/40] LR [0.00100] Loss 1.6313:  62%|██████▎   | 25/40 [00:30<00:17,  1.18s/it]Train | Ep [25/40] LR [0.00100] Loss 1.6313:  65%|██████▌   | 26/40 [00:30<00:16,  1.19s/it]2026-07-05 20:56:51,467 - INFO - loss/structure_loss: 0.6698
+2026-07-05 20:56:51,467 - INFO - loss/image_loss: 0.5595
+2026-07-05 20:56:51,467 - INFO - loss/name_loss: 0.3499
+2026-07-05 20:56:51,467 - INFO - loss/loss_all: 1.6313
+2026-07-05 20:56:51,467 - INFO - loss/loss_entity: 0.2859
+2026-07-05 20:56:51,467 - INFO - loss/loss_attribute: 1.3453
+2026-07-05 20:56:51,467 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:52,078 - INFO - Ep 25 | l2r: acc of top [1, 5, 10] = [0.9619 0.9867 0.9915], mr = 1.8045, mrr = 0.9736
+2026-07-05 20:56:52,078 - INFO - Ep 25 | r2l: acc of top [1, 5, 10] = [0.9621 0.9873 0.9927], mr = 1.4215, mrr = 0.9742
+2026-07-05 20:56:52,078 - INFO - Best model update in Ep 25: MRR from [0.9742] --> [0.9742]
+2026-07-05 20:56:52,097 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+Train | Ep [26/40] LR [0.00100] Loss 1.6178:  65%|██████▌   | 26/40 [00:32<00:16,  1.19s/it]Train | Ep [26/40] LR [0.00100] Loss 1.6178:  68%|██████▊   | 27/40 [00:32<00:15,  1.18s/it]2026-07-05 20:56:52,635 - INFO - loss/structure_loss: 0.6649
+2026-07-05 20:56:52,635 - INFO - loss/image_loss: 0.5454
+2026-07-05 20:56:52,635 - INFO - loss/name_loss: 0.3489
+2026-07-05 20:56:52,635 - INFO - loss/loss_all: 1.6178
+2026-07-05 20:56:52,635 - INFO - loss/loss_entity: 0.3044
+2026-07-05 20:56:52,635 - INFO - loss/loss_attribute: 1.3134
+2026-07-05 20:56:52,635 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:53,248 - INFO - Ep 26 | l2r: acc of top [1, 5, 10] = [0.9624 0.987  0.9921], mr = 1.7884, mrr = 0.9740
+2026-07-05 20:56:53,249 - INFO - Ep 26 | r2l: acc of top [1, 5, 10] = [0.9613 0.9879 0.9927], mr = 1.4037, mrr = 0.9739
+Train | Ep [27/40] LR [0.00100] Loss 1.5779:  68%|██████▊   | 27/40 [00:33<00:15,  1.18s/it]Train | Ep [27/40] LR [0.00100] Loss 1.5779:  70%|███████   | 28/40 [00:33<00:14,  1.17s/it]2026-07-05 20:56:53,786 - INFO - loss/structure_loss: 0.6502
+2026-07-05 20:56:53,786 - INFO - loss/image_loss: 0.5477
+2026-07-05 20:56:53,786 - INFO - loss/name_loss: 0.3497
+2026-07-05 20:56:53,786 - INFO - loss/loss_all: 1.5779
+2026-07-05 20:56:53,786 - INFO - loss/loss_entity: 0.2874
+2026-07-05 20:56:53,786 - INFO - loss/loss_attribute: 1.2905
+2026-07-05 20:56:53,786 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:54,395 - INFO - Ep 27 | l2r: acc of top [1, 5, 10] = [0.9627 0.987  0.9924], mr = 1.7678, mrr = 0.9744
+2026-07-05 20:56:54,395 - INFO - Ep 27 | r2l: acc of top [1, 5, 10] = [0.961  0.9879 0.9924], mr = 1.3881, mrr = 0.9739
+2026-07-05 20:56:54,395 - INFO - Best model update in Ep 27: MRR from [0.9742] --> [0.9744]
+2026-07-05 20:56:54,413 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+Train | Ep [28/40] LR [0.00100] Loss 1.5707:  70%|███████   | 28/40 [00:34<00:14,  1.17s/it]Train | Ep [28/40] LR [0.00100] Loss 1.5707:  72%|███████▎  | 29/40 [00:34<00:12,  1.17s/it]2026-07-05 20:56:54,953 - INFO - loss/structure_loss: 0.6588
+2026-07-05 20:56:54,953 - INFO - loss/image_loss: 0.5450
+2026-07-05 20:56:54,953 - INFO - loss/name_loss: 0.3523
+2026-07-05 20:56:54,953 - INFO - loss/loss_all: 1.5707
+2026-07-05 20:56:54,953 - INFO - loss/loss_entity: 0.2820
+2026-07-05 20:56:54,953 - INFO - loss/loss_attribute: 1.2888
+2026-07-05 20:56:54,953 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:55,567 - INFO - Ep 28 | l2r: acc of top [1, 5, 10] = [0.9627 0.9879 0.9924], mr = 1.7523, mrr = 0.9746
+2026-07-05 20:56:55,568 - INFO - Ep 28 | r2l: acc of top [1, 5, 10] = [0.9602 0.9879 0.9927], mr = 1.3802, mrr = 0.9735
+2026-07-05 20:56:55,568 - INFO - Best model update in Ep 28: MRR from [0.9744] --> [0.9746]
+2026-07-05 20:56:55,584 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+Train | Ep [29/40] LR [0.00100] Loss 1.5125:  72%|███████▎  | 29/40 [00:35<00:12,  1.17s/it]Train | Ep [29/40] LR [0.00100] Loss 1.5125:  75%|███████▌  | 30/40 [00:35<00:11,  1.17s/it]2026-07-05 20:56:56,121 - INFO - loss/structure_loss: 0.6205
+2026-07-05 20:56:56,121 - INFO - loss/image_loss: 0.5466
+2026-07-05 20:56:56,121 - INFO - loss/name_loss: 0.3494
+2026-07-05 20:56:56,121 - INFO - loss/loss_all: 1.5125
+2026-07-05 20:56:56,121 - INFO - loss/loss_entity: 0.2760
+2026-07-05 20:56:56,121 - INFO - loss/loss_attribute: 1.2365
+2026-07-05 20:56:56,121 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:56,734 - INFO - Ep 29 | l2r: acc of top [1, 5, 10] = [0.963  0.9881 0.9915], mr = 1.7455, mrr = 0.9747
+2026-07-05 20:56:56,735 - INFO - Ep 29 | r2l: acc of top [1, 5, 10] = [0.9619 0.9881 0.9927], mr = 1.3760, mrr = 0.9744
+2026-07-05 20:56:56,735 - INFO - Best model update in Ep 29: MRR from [0.9746] --> [0.9747]
+2026-07-05 20:56:56,753 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+Train | Ep [30/40] LR [0.00100] Loss 1.4963:  75%|███████▌  | 30/40 [00:36<00:11,  1.17s/it]Train | Ep [30/40] LR [0.00100] Loss 1.4963:  78%|███████▊  | 31/40 [00:36<00:10,  1.17s/it]2026-07-05 20:56:57,292 - INFO - loss/structure_loss: 0.6281
+2026-07-05 20:56:57,292 - INFO - loss/image_loss: 0.5393
+2026-07-05 20:56:57,292 - INFO - loss/name_loss: 0.3404
+2026-07-05 20:56:57,292 - INFO - loss/loss_all: 1.4963
+2026-07-05 20:56:57,292 - INFO - loss/loss_entity: 0.2799
+2026-07-05 20:56:57,292 - INFO - loss/loss_attribute: 1.2163
+2026-07-05 20:56:57,292 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:57,903 - INFO - Ep 30 | l2r: acc of top [1, 5, 10] = [0.9641 0.9884 0.9918], mr = 1.7260, mrr = 0.9754
+2026-07-05 20:56:57,904 - INFO - Ep 30 | r2l: acc of top [1, 5, 10] = [0.963  0.9879 0.9935], mr = 1.3692, mrr = 0.9749
+2026-07-05 20:56:57,904 - INFO - Best model update in Ep 30: MRR from [0.9747] --> [0.9754]
+2026-07-05 20:56:57,921 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+Train | Ep [31/40] LR [0.00100] Loss 1.4765:  78%|███████▊  | 31/40 [00:37<00:10,  1.17s/it]Train | Ep [31/40] LR [0.00100] Loss 1.4765:  80%|████████  | 32/40 [00:37<00:09,  1.17s/it]2026-07-05 20:56:58,458 - INFO - loss/structure_loss: 0.6119
+2026-07-05 20:56:58,459 - INFO - loss/image_loss: 0.5469
+2026-07-05 20:56:58,459 - INFO - loss/name_loss: 0.3452
+2026-07-05 20:56:58,459 - INFO - loss/loss_all: 1.4765
+2026-07-05 20:56:58,459 - INFO - loss/loss_entity: 0.2746
+2026-07-05 20:56:58,459 - INFO - loss/loss_attribute: 1.2019
+2026-07-05 20:56:58,459 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:56:59,072 - INFO - Ep 31 | l2r: acc of top [1, 5, 10] = [0.9641 0.9879 0.9921], mr = 1.7116, mrr = 0.9754
+2026-07-05 20:56:59,073 - INFO - Ep 31 | r2l: acc of top [1, 5, 10] = [0.9641 0.9884 0.9935], mr = 1.3607, mrr = 0.9756
+2026-07-05 20:56:59,073 - INFO - Best model update in Ep 31: MRR from [0.9754] --> [0.9756]
+2026-07-05 20:56:59,090 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+Train | Ep [32/40] LR [0.00100] Loss 1.4633:  80%|████████  | 32/40 [00:39<00:09,  1.17s/it]Train | Ep [32/40] LR [0.00100] Loss 1.4633:  82%|████████▎ | 33/40 [00:39<00:08,  1.17s/it]2026-07-05 20:56:59,626 - INFO - loss/structure_loss: 0.6268
+2026-07-05 20:56:59,626 - INFO - loss/image_loss: 0.5303
+2026-07-05 20:56:59,626 - INFO - loss/name_loss: 0.3422
+2026-07-05 20:56:59,626 - INFO - loss/loss_all: 1.4633
+2026-07-05 20:56:59,627 - INFO - loss/loss_entity: 0.2770
+2026-07-05 20:56:59,627 - INFO - loss/loss_attribute: 1.1863
+2026-07-05 20:56:59,627 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:57:00,239 - INFO - Ep 32 | l2r: acc of top [1, 5, 10] = [0.9636 0.9884 0.9918], mr = 1.7034, mrr = 0.9753
+2026-07-05 20:57:00,240 - INFO - Ep 32 | r2l: acc of top [1, 5, 10] = [0.9633 0.9881 0.9941], mr = 1.3571, mrr = 0.9751
+Train | Ep [33/40] LR [0.00100] Loss 1.4017:  82%|████████▎ | 33/40 [00:40<00:08,  1.17s/it]Train | Ep [33/40] LR [0.00100] Loss 1.4017:  85%|████████▌ | 34/40 [00:40<00:06,  1.16s/it]2026-07-05 20:57:00,776 - INFO - loss/structure_loss: 0.5978
+2026-07-05 20:57:00,776 - INFO - loss/image_loss: 0.5307
+2026-07-05 20:57:00,776 - INFO - loss/name_loss: 0.3369
+2026-07-05 20:57:00,776 - INFO - loss/loss_all: 1.4017
+2026-07-05 20:57:00,776 - INFO - loss/loss_entity: 0.2621
+2026-07-05 20:57:00,776 - INFO - loss/loss_attribute: 1.1396
+2026-07-05 20:57:00,776 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:57:01,379 - INFO - Ep 33 | l2r: acc of top [1, 5, 10] = [0.9641 0.9887 0.9927], mr = 1.6927, mrr = 0.9757
+2026-07-05 20:57:01,379 - INFO - Ep 33 | r2l: acc of top [1, 5, 10] = [0.9636 0.989  0.9944], mr = 1.3559, mrr = 0.9753
+2026-07-05 20:57:01,379 - INFO - Best model update in Ep 33: MRR from [0.9756] --> [0.9757]
+2026-07-05 20:57:01,399 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+Train | Ep [34/40] LR [0.00100] Loss 1.4130:  85%|████████▌ | 34/40 [00:41<00:06,  1.16s/it]Train | Ep [34/40] LR [0.00100] Loss 1.4130:  88%|████████▊ | 35/40 [00:41<00:05,  1.16s/it]2026-07-05 20:57:01,933 - INFO - loss/structure_loss: 0.6055
+2026-07-05 20:57:01,934 - INFO - loss/image_loss: 0.5364
+2026-07-05 20:57:01,934 - INFO - loss/name_loss: 0.3361
+2026-07-05 20:57:01,934 - INFO - loss/loss_all: 1.4130
+2026-07-05 20:57:01,934 - INFO - loss/loss_entity: 0.2703
+2026-07-05 20:57:01,934 - INFO - loss/loss_attribute: 1.1427
+2026-07-05 20:57:01,934 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:57:02,542 - INFO - Ep 34 | l2r: acc of top [1, 5, 10] = [0.9641 0.989  0.9929], mr = 1.6689, mrr = 0.9756
+2026-07-05 20:57:02,543 - INFO - Ep 34 | r2l: acc of top [1, 5, 10] = [0.9627 0.9895 0.9938], mr = 1.3520, mrr = 0.9749
+Train | Ep [35/40] LR [0.00100] Loss 1.3644:  88%|████████▊ | 35/40 [00:42<00:05,  1.16s/it]Train | Ep [35/40] LR [0.00100] Loss 1.3644:  90%|█████████ | 36/40 [00:42<00:04,  1.16s/it]2026-07-05 20:57:03,077 - INFO - loss/structure_loss: 0.5797
+2026-07-05 20:57:03,077 - INFO - loss/image_loss: 0.5318
+2026-07-05 20:57:03,077 - INFO - loss/name_loss: 0.3354
+2026-07-05 20:57:03,077 - INFO - loss/loss_all: 1.3644
+2026-07-05 20:57:03,077 - INFO - loss/loss_entity: 0.2655
+2026-07-05 20:57:03,077 - INFO - loss/loss_attribute: 1.0990
+2026-07-05 20:57:03,077 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:57:03,684 - INFO - Ep 35 | l2r: acc of top [1, 5, 10] = [0.9641 0.9881 0.9935], mr = 1.6489, mrr = 0.9757
+2026-07-05 20:57:03,685 - INFO - Ep 35 | r2l: acc of top [1, 5, 10] = [0.9641 0.9898 0.9935], mr = 1.3390, mrr = 0.9758
+2026-07-05 20:57:03,685 - INFO - Best model update in Ep 35: MRR from [0.9757] --> [0.9758]
+2026-07-05 20:57:03,705 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+Train | Ep [36/40] LR [0.00100] Loss 1.3720:  90%|█████████ | 36/40 [00:43<00:04,  1.16s/it]Train | Ep [36/40] LR [0.00100] Loss 1.3720:  92%|█████████▎| 37/40 [00:43<00:03,  1.16s/it]2026-07-05 20:57:04,244 - INFO - loss/structure_loss: 0.5937
+2026-07-05 20:57:04,244 - INFO - loss/image_loss: 0.5389
+2026-07-05 20:57:04,244 - INFO - loss/name_loss: 0.3359
+2026-07-05 20:57:04,244 - INFO - loss/loss_all: 1.3720
+2026-07-05 20:57:04,244 - INFO - loss/loss_entity: 0.2601
+2026-07-05 20:57:04,244 - INFO - loss/loss_attribute: 1.1119
+2026-07-05 20:57:04,244 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:57:04,856 - INFO - Ep 36 | l2r: acc of top [1, 5, 10] = [0.9647 0.9887 0.9938], mr = 1.6297, mrr = 0.9762
+2026-07-05 20:57:04,856 - INFO - Ep 36 | r2l: acc of top [1, 5, 10] = [0.9644 0.9901 0.9938], mr = 1.3268, mrr = 0.9761
+2026-07-05 20:57:04,856 - INFO - Best model update in Ep 36: MRR from [0.9758] --> [0.9762]
+2026-07-05 20:57:04,874 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+Train | Ep [37/40] LR [0.00100] Loss 1.3303:  92%|█████████▎| 37/40 [00:44<00:03,  1.16s/it]Train | Ep [37/40] LR [0.00100] Loss 1.3303:  95%|█████████▌| 38/40 [00:44<00:02,  1.16s/it]2026-07-05 20:57:05,408 - INFO - loss/structure_loss: 0.5829
+2026-07-05 20:57:05,408 - INFO - loss/image_loss: 0.5264
+2026-07-05 20:57:05,409 - INFO - loss/name_loss: 0.3317
+2026-07-05 20:57:05,409 - INFO - loss/loss_all: 1.3303
+2026-07-05 20:57:05,409 - INFO - loss/loss_entity: 0.2584
+2026-07-05 20:57:05,409 - INFO - loss/loss_attribute: 1.0719
+2026-07-05 20:57:05,409 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:57:06,023 - INFO - Ep 37 | l2r: acc of top [1, 5, 10] = [0.9647 0.9893 0.9929], mr = 1.6497, mrr = 0.9763
+2026-07-05 20:57:06,023 - INFO - Ep 37 | r2l: acc of top [1, 5, 10] = [0.9653 0.9893 0.9944], mr = 1.3186, mrr = 0.9767
+2026-07-05 20:57:06,023 - INFO - Best model update in Ep 37: MRR from [0.9762] --> [0.9767]
+2026-07-05 20:57:06,043 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+Train | Ep [38/40] LR [0.00100] Loss 1.3335:  95%|█████████▌| 38/40 [00:46<00:02,  1.16s/it]Train | Ep [38/40] LR [0.00100] Loss 1.3335:  98%|█████████▊| 39/40 [00:46<00:01,  1.16s/it]2026-07-05 20:57:06,578 - INFO - loss/structure_loss: 0.5877
+2026-07-05 20:57:06,578 - INFO - loss/image_loss: 0.5301
+2026-07-05 20:57:06,578 - INFO - loss/name_loss: 0.3326
+2026-07-05 20:57:06,578 - INFO - loss/loss_all: 1.3335
+2026-07-05 20:57:06,578 - INFO - loss/loss_entity: 0.2617
+2026-07-05 20:57:06,578 - INFO - loss/loss_attribute: 1.0718
+2026-07-05 20:57:06,578 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:57:07,188 - INFO - Ep 38 | l2r: acc of top [1, 5, 10] = [0.9655 0.9898 0.9932], mr = 1.6681, mrr = 0.9771
+2026-07-05 20:57:07,188 - INFO - Ep 38 | r2l: acc of top [1, 5, 10] = [0.9647 0.9893 0.9944], mr = 1.3260, mrr = 0.9766
+2026-07-05 20:57:07,188 - INFO - Best model update in Ep 38: MRR from [0.9767] --> [0.9771]
+2026-07-05 20:57:07,208 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_best.pkl] done!
+Train | Ep [39/40] LR [0.00100] Loss 1.2544:  98%|█████████▊| 39/40 [00:47<00:01,  1.16s/it]Train | Ep [39/40] LR [0.00100] Loss 1.2544: 100%|██████████| 40/40 [00:47<00:00,  1.16s/it]2026-07-05 20:57:07,744 - INFO - loss/structure_loss: 0.5767
+2026-07-05 20:57:07,744 - INFO - loss/image_loss: 0.5001
+2026-07-05 20:57:07,744 - INFO - loss/name_loss: 0.3254
+2026-07-05 20:57:07,744 - INFO - loss/loss_all: 1.2544
+2026-07-05 20:57:07,744 - INFO - loss/loss_entity: 0.2454
+2026-07-05 20:57:07,744 - INFO - loss/loss_attribute: 1.0090
+2026-07-05 20:57:07,744 - INFO -  --------------------- Eval result --------------------- 
+2026-07-05 20:57:08,433 - INFO - Ep 39 | l2r: acc of top [1, 5, 10] = [0.9664 0.9904 0.9929], mr = 1.6712, mrr = 0.9776
+2026-07-05 20:57:08,434 - INFO - Ep 39 | r2l: acc of top [1, 5, 10] = [0.9653 0.9904 0.9941], mr = 1.3308, mrr = 0.9770
+2026-07-05 20:57:08,448 - INFO - Saving [/home/UNT/cl1179/code/RULE/data/save/ICEWS/DNC_0.0_use_surface_icews_wiki_last.pkl] done!
+2026-07-05 20:57:08,448 - INFO - Best Performance: {'l2r': {'top1': 0.965499997138977, 'top5': 0.989799976348877, 'top10': 0.9932000041007996, 'mr': 1.6681, 'mrr': 0.9771}, 'r2l': {'top1': 0.9646999835968018, 'top5': 0.989300012588501, 'top10': 0.9944000244140625, 'mr': 1.326, 'mrr': 0.9766}}
+Train | Ep [39/40] LR [0.00100] Loss 1.2544: 100%|██████████| 40/40 [00:47<00:00,  1.20s/it]
+2026-07-05 20:57:08,448 - INFO - Training completed!
+Features saved to /home/UNT/cl1179/code/RULE/data/prior_features/ICEWS/DNC_0.0_use_surface_icews_wiki.pkl

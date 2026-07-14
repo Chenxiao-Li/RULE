@@ -1,0 +1,51 @@
+
+[INFO] Processing: DNC_0.0_zh_en.pkl
+------------------------------------------------------------
+Test Set Results:
+  High: Top1 96.49% | Top5 99.42% | Top10 99.77% | MRR 0.9788 | Count 8295
+  Low: Top1 43.67% | Top5 76.55% | Top10 86.39% | MRR 0.5829 | Count 2205
+Top-10 correct: 10181/10500 (96.96%)
+Saved candidates to ./candidate_json/DBP15K/DNC_0.0_zh_en.json
+------------------------------------------------------------
+
+[INFO] Processing: DNC_0.2_zh_en.pkl
+------------------------------------------------------------
+Test Set Results:
+  High: Top1 96.19% | Top5 99.18% | Top10 99.56% | MRR 0.9759 | Count 7723
+  Low: Top1 38.42% | Top5 71.26% | Top10 81.53% | MRR 0.5331 | Count 2777
+Top-10 correct: 9953/10500 (94.79%)
+Saved candidates to ./candidate_json/DBP15K/DNC_0.2_zh_en.json
+------------------------------------------------------------
+
+[INFO] Processing: DNC_0.5_zh_en.pkl
+------------------------------------------------------------
+Test Set Results:
+  High: Top1 95.73% | Top5 98.58% | Top10 99.06% | MRR 0.9704 | Count 6695
+  Low: Top1 34.14% | Top5 63.26% | Top10 74.80% | MRR 0.4741 | Count 3805
+Top-10 correct: 9478/10500 (90.27%)
+Saved candidates to ./candidate_json/DBP15K/DNC_0.5_zh_en.json
+------------------------------------------------------------
+
+[INFO] Processing: DNC_0.0_ja_en.pkl
+[WARN] File not found: ./data/prior_features/DBP15K/DNC_0.0_ja_en.pkl
+
+
+[INFO] Processing: DNC_0.2_ja_en.pkl
+[WARN] File not found: ./data/prior_features/DBP15K/DNC_0.2_ja_en.pkl
+
+
+[INFO] Processing: DNC_0.5_ja_en.pkl
+[WARN] File not found: ./data/prior_features/DBP15K/DNC_0.5_ja_en.pkl
+
+
+[INFO] Processing: DNC_0.0_fr_en.pkl
+[WARN] File not found: ./data/prior_features/DBP15K/DNC_0.0_fr_en.pkl
+
+
+[INFO] Processing: DNC_0.2_fr_en.pkl
+[WARN] File not found: ./data/prior_features/DBP15K/DNC_0.2_fr_en.pkl
+
+
+[INFO] Processing: DNC_0.5_fr_en.pkl
+[WARN] File not found: ./data/prior_features/DBP15K/DNC_0.5_fr_en.pkl
+

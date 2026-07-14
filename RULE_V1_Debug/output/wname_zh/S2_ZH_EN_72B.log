@@ -1,0 +1,51 @@
+
+[INFO] Processing: DNC_0.0_use_surface_zh_en.pkl
+------------------------------------------------------------
+Test Set Results:
+  High: Top1 99.46% | Top5 99.92% | Top10 99.98% | MRR 0.9967 | Count 10103
+  Low: Top1 46.10% | Top5 85.39% | Top10 91.94% | MRR 0.6276 | Count 397
+Top-10 correct: 10466/10500 (99.68%)
+Saved candidates to ./candidate_json/DBP15K/DNC_0.0_use_surface_zh_en.json
+------------------------------------------------------------
+
+[INFO] Processing: DNC_0.2_use_surface_zh_en.pkl
+------------------------------------------------------------
+Test Set Results:
+  High: Top1 99.26% | Top5 99.89% | Top10 99.92% | MRR 0.9953 | Count 9950
+  Low: Top1 43.27% | Top5 79.27% | Top10 89.82% | MRR 0.5918 | Count 550
+Top-10 correct: 10436/10500 (99.39%)
+Saved candidates to ./candidate_json/DBP15K/DNC_0.2_use_surface_zh_en.json
+------------------------------------------------------------
+
+[INFO] Processing: DNC_0.5_use_surface_zh_en.pkl
+------------------------------------------------------------
+Test Set Results:
+  High: Top1 98.86% | Top5 99.64% | Top10 99.83% | MRR 0.9925 | Count 9748
+  Low: Top1 41.36% | Top5 73.54% | Top10 84.31% | MRR 0.5572 | Count 752
+Top-10 correct: 10365/10500 (98.71%)
+Saved candidates to ./candidate_json/DBP15K/DNC_0.5_use_surface_zh_en.json
+------------------------------------------------------------
+
+[INFO] Processing: DNC_0.0_use_surface_ja_en.pkl
+[WARN] File not found: ./data/prior_features/DBP15K/DNC_0.0_use_surface_ja_en.pkl
+
+
+[INFO] Processing: DNC_0.2_use_surface_ja_en.pkl
+[WARN] File not found: ./data/prior_features/DBP15K/DNC_0.2_use_surface_ja_en.pkl
+
+
+[INFO] Processing: DNC_0.5_use_surface_ja_en.pkl
+[WARN] File not found: ./data/prior_features/DBP15K/DNC_0.5_use_surface_ja_en.pkl
+
+
+[INFO] Processing: DNC_0.0_use_surface_fr_en.pkl
+[WARN] File not found: ./data/prior_features/DBP15K/DNC_0.0_use_surface_fr_en.pkl
+
+
+[INFO] Processing: DNC_0.2_use_surface_fr_en.pkl
+[WARN] File not found: ./data/prior_features/DBP15K/DNC_0.2_use_surface_fr_en.pkl
+
+
+[INFO] Processing: DNC_0.5_use_surface_fr_en.pkl
+[WARN] File not found: ./data/prior_features/DBP15K/DNC_0.5_use_surface_fr_en.pkl
+
