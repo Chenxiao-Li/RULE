@@ -436,8 +436,16 @@ def get_candidate_descriptions_batch(
                 "image_available": False
             }
 
+    # if image_requests:
+    #     responses = batch_inference(image_requests, max_new_tokens=64)
+
     if image_requests:
-        responses = batch_inference(image_requests, max_new_tokens=64)
+        responses = []
+
+        for candidate_id, request in zip(request_ids, image_requests):
+            print(f"Testing candidate image: ID={candidate_id}, image={request['image']}")
+            response = batch_inference([request], max_new_tokens=64)[0]
+            responses.append(response)
 
         for candidate_id, response in zip(request_ids, responses):
             visual_supplement = response.strip()
