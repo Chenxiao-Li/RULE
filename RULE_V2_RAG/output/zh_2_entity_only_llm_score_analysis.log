@@ -1,123 +1,0 @@
-Loading weights:   0%|          | 0/1353 [00:00<?, ?it/s]Loading weights:   0%|          | 1/1353 [00:00<04:14,  5.30it/s]Loading weights:   0%|          | 4/1353 [00:00<01:31, 14.79it/s]Loading weights:   1%|          | 12/1353 [00:00<00:35, 38.02it/s]Loading weights:   1%|▏         | 17/1353 [00:00<00:34, 38.75it/s]Loading weights:   2%|▏         | 23/1353 [00:00<00:29, 45.06it/s]Loading weights:   2%|▏         | 29/1353 [00:00<00:28, 46.20it/s]Loading weights:   3%|▎         | 36/1353 [00:00<00:24, 52.97it/s]Loading weights:   3%|▎         | 42/1353 [00:01<00:29, 44.08it/s]Loading weights:   4%|▎         | 50/1353 [00:01<00:24, 52.98it/s]Loading weights:   4%|▍         | 56/1353 [00:01<00:25, 50.98it/s]Loading weights:   5%|▍         | 62/1353 [00:01<00:24, 52.84it/s]Loading weights:   5%|▌         | 68/1353 [00:01<00:26, 48.44it/s]Loading weights:   6%|▌         | 77/1353 [00:01<00:23, 53.42it/s]Loading weights:   6%|▋         | 86/1353 [00:01<00:20, 62.35it/s]Loading weights:   7%|▋         | 93/1353 [00:01<00:25, 50.37it/s]Loading weights:   7%|▋         | 101/1353 [00:02<00:23, 52.18it/s]Loading weights:   8%|▊         | 109/1353 [00:02<00:21, 58.16it/s]Loading weights:   9%|▊         | 116/1353 [00:02<00:24, 50.53it/s]Loading weights:   9%|▉         | 124/1353 [00:02<00:21, 56.82it/s]Loading weights:  10%|▉         | 131/1353 [00:02<00:22, 53.95it/s]Loading weights:  10%|█         | 137/1353 [00:02<00:24, 50.52it/s]Loading weights:  11%|█         | 144/1353 [00:02<00:22, 54.71it/s]Loading weights:  11%|█         | 150/1353 [00:03<00:26, 45.82it/s]Loading weights:  12%|█▏        | 158/1353 [00:03<00:28, 41.78it/s]Loading weights:  13%|█▎        | 172/1353 [00:03<00:19, 60.58it/s]Loading weights:  13%|█▎        | 180/1353 [00:03<00:20, 57.11it/s]Loading weights:  14%|█▍        | 187/1353 [00:03<00:23, 50.56it/s]Loading weights:  14%|█▍        | 196/1353 [00:03<00:19, 58.18it/s]Loading weights:  15%|█▌        | 203/1353 [00:04<00:20, 54.84it/s]Loading weights:  15%|█▌        | 209/1353 [00:04<00:22, 51.18it/s]Loading weights:  16%|█▌        | 216/1353 [00:04<00:20, 55.41it/s]Loading weights:  16%|█▋        | 222/1353 [00:04<00:23, 48.39it/s]Loading weights:  17%|█▋        | 233/1353 [00:04<00:20, 54.92it/s]Loading weights:  18%|█▊        | 241/1353 [00:04<00:18, 60.50it/s]Loading weights:  18%|█▊        | 248/1353 [00:04<00:21, 51.78it/s]Loading weights:  19%|█▉        | 256/1353 [00:04<00:18, 57.82it/s]Loading weights:  19%|█▉        | 263/1353 [00:05<00:19, 54.89it/s]Loading weights:  20%|█▉        | 269/1353 [00:05<00:21, 50.96it/s]Loading weights:  20%|██        | 276/1353 [00:05<00:19, 54.86it/s]Loading weights:  21%|██        | 282/1353 [00:05<00:23, 46.34it/s]Loading weights:  21%|██▏       | 290/1353 [00:05<00:19, 53.41it/s]Loading weights:  22%|██▏       | 296/1353 [00:05<00:21, 49.91it/s]Loading weights:  22%|██▏       | 303/1353 [00:05<00:20, 50.09it/s]Loading weights:  23%|██▎       | 312/1353 [00:06<00:17, 59.24it/s]Loading weights:  24%|██▎       | 319/1353 [00:06<00:20, 50.67it/s]Loading weights:  24%|██▍       | 329/1353 [00:06<00:18, 54.43it/s]Loading weights:  25%|██▍       | 336/1353 [00:06<00:17, 57.39it/s]Loading weights:  25%|██▌       | 343/1353 [00:06<00:20, 49.33it/s]Loading weights:  26%|██▌       | 352/1353 [00:06<00:17, 57.71it/s]Loading weights:  27%|██▋       | 359/1353 [00:06<00:18, 53.48it/s]Loading weights:  27%|██▋       | 365/1353 [00:07<00:18, 52.17it/s]Loading weights:  28%|██▊       | 374/1353 [00:07<00:16, 60.88it/s]Loading weights:  28%|██▊       | 381/1353 [00:07<00:18, 52.11it/s]Loading weights:  29%|██▊       | 388/1353 [00:07<00:17, 55.91it/s]Loading weights:  29%|██▉       | 395/1353 [00:07<00:17, 53.66it/s]Loading weights:  30%|██▉       | 401/1353 [00:07<00:18, 50.21it/s]Loading weights:  30%|███       | 408/1353 [00:07<00:17, 53.78it/s]Loading weights:  31%|███       | 414/1353 [00:08<00:20, 45.77it/s]Loading weights:  31%|███▏      | 424/1353 [00:08<00:16, 57.65it/s]Loading weights:  32%|███▏      | 431/1353 [00:08<00:16, 54.85it/s]Loading weights:  32%|███▏      | 437/1353 [00:08<00:18, 50.53it/s]Loading weights:  33%|███▎      | 444/1353 [00:08<00:16, 54.82it/s]Loading weights:  33%|███▎      | 450/1353 [00:08<00:19, 46.25it/s]Loading weights:  34%|███▍      | 460/1353 [00:08<00:17, 50.62it/s]Loading weights:  35%|███▍      | 468/1353 [00:08<00:15, 56.87it/s]Loading weights:  35%|███▌      | 475/1353 [00:09<00:17, 49.95it/s]Loading weights:  36%|███▌      | 484/1353 [00:09<00:18, 46.13it/s]Loading weights:  37%|███▋      | 496/1353 [00:09<00:14, 60.53it/s]Loading weights:  37%|███▋      | 504/1353 [00:09<00:14, 57.33it/s]Loading weights:  38%|███▊      | 511/1353 [00:09<00:16, 50.60it/s]Loading weights:  38%|███▊      | 519/1353 [00:10<00:16, 50.34it/s]Loading weights:  39%|███▉      | 528/1353 [00:10<00:14, 58.47it/s]Loading weights:  40%|███▉      | 535/1353 [00:10<00:16, 50.73it/s]Loading weights:  40%|████      | 544/1353 [00:10<00:13, 59.07it/s]Loading weights:  41%|████      | 551/1353 [00:10<00:14, 55.62it/s]Loading weights:  41%|████      | 558/1353 [00:10<00:16, 47.72it/s]Loading weights:  42%|████▏     | 568/1353 [00:10<00:13, 58.45it/s]Loading weights:  42%|████▏     | 575/1353 [00:10<00:14, 55.53it/s]Loading weights:  43%|████▎     | 582/1353 [00:11<00:16, 47.52it/s]Loading weights:  44%|████▎     | 590/1353 [00:11<00:14, 54.08it/s]Loading weights:  44%|████▍     | 597/1353 [00:11<00:13, 54.73it/s]Loading weights:  45%|████▍     | 605/1353 [00:11<00:14, 53.07it/s]Loading weights:  45%|████▌     | 614/1353 [00:11<00:12, 61.31it/s]Loading weights:  46%|████▌     | 621/1353 [00:11<00:14, 52.24it/s]Loading weights:  46%|████▋     | 627/1353 [00:12<00:17, 42.20it/s]Loading weights:  47%|████▋     | 637/1353 [00:12<00:13, 53.71it/s]Loading weights:  48%|████▊     | 644/1353 [00:12<00:13, 50.97it/s]Loading weights:  48%|████▊     | 653/1353 [00:12<00:12, 56.34it/s]Loading weights:  49%|████▉     | 662/1353 [00:12<00:10, 63.71it/s]Loading weights:  49%|████▉     | 669/1353 [00:12<00:12, 53.62it/s]Loading weights:  50%|█████     | 677/1353 [00:12<00:12, 52.47it/s]Loading weights:  51%|█████     | 684/1353 [00:13<00:11, 56.12it/s]Loading weights:  51%|█████     | 691/1353 [00:13<00:13, 49.20it/s]Loading weights:  52%|█████▏    | 700/1353 [00:13<00:11, 58.10it/s]Loading weights:  52%|█████▏    | 707/1353 [00:13<00:11, 55.18it/s]Loading weights:  53%|█████▎    | 713/1353 [00:13<00:12, 51.30it/s]Loading weights:  53%|█████▎    | 720/1353 [00:13<00:11, 55.31it/s]Loading weights:  54%|█████▎    | 726/1353 [00:13<00:13, 46.65it/s]Loading weights:  54%|█████▍    | 734/1353 [00:14<00:14, 42.54it/s]Loading weights:  55%|█████▌    | 749/1353 [00:14<00:10, 58.55it/s]Loading weights:  56%|█████▌    | 756/1353 [00:14<00:09, 60.92it/s]Loading weights:  56%|█████▋    | 763/1353 [00:14<00:11, 52.29it/s]Loading weights:  57%|█████▋    | 772/1353 [00:14<00:09, 60.11it/s]Loading weights:  58%|█████▊    | 779/1353 [00:14<00:10, 56.74it/s]Loading weights:  58%|█████▊    | 786/1353 [00:15<00:11, 48.18it/s]Loading weights:  59%|█████▉    | 796/1353 [00:15<00:09, 58.75it/s]Loading weights:  59%|█████▉    | 803/1353 [00:15<00:10, 53.47it/s]Loading weights:  60%|█████▉    | 809/1353 [00:15<00:10, 52.36it/s]Loading weights:  60%|██████    | 817/1353 [00:15<00:09, 58.76it/s]Loading weights:  61%|██████    | 824/1353 [00:15<00:10, 50.38it/s]Loading weights:  62%|██████▏   | 833/1353 [00:15<00:09, 52.27it/s]Loading weights:  62%|██████▏   | 843/1353 [00:15<00:08, 62.82it/s]Loading weights:  63%|██████▎   | 850/1353 [00:16<00:09, 51.62it/s]Loading weights:  63%|██████▎   | 857/1353 [00:16<00:09, 50.93it/s]Loading weights:  64%|██████▍   | 864/1353 [00:16<00:08, 54.87it/s]Loading weights:  64%|██████▍   | 870/1353 [00:16<00:10, 46.19it/s]Loading weights:  65%|██████▌   | 881/1353 [00:16<00:08, 53.26it/s]Loading weights:  66%|██████▌   | 887/1353 [00:17<00:11, 39.45it/s]Loading weights:  67%|██████▋   | 905/1353 [00:17<00:07, 58.73it/s]Loading weights:  67%|██████▋   | 912/1353 [00:17<00:08, 49.68it/s]Loading weights:  68%|██████▊   | 924/1353 [00:17<00:06, 62.37it/s]Loading weights:  69%|██████▉   | 932/1353 [00:17<00:07, 54.11it/s]Loading weights:  70%|██████▉   | 941/1353 [00:17<00:07, 56.39it/s]Loading weights:  70%|███████   | 950/1353 [00:17<00:06, 63.15it/s]Loading weights:  71%|███████   | 958/1353 [00:18<00:07, 54.21it/s]Loading weights:  87%|████████▋ | 1173/1353 [00:18<00:00, 487.56it/s]Loading weights: 100%|██████████| 1353/1353 [00:18<00:00, 73.75it/s] 
-
-================================================================================
-Query ID: 24135
-Query name: 阿卜杜勒-哈米德二世
-Reference ID: 37094
-Base rank: 0 (1th position)
-Candidates: [37094, 18359, 35317, 18908, 18680, 18236, 36606, 18484, 36608, 37020]
-Ranking rule: final_score = Qwen image_score
-
-Image response for 37094:
-[IMAGE SIMILARITY] = 7 out of 10.
-
-Image response for 18359:
-[IMAGE SIMILARITY] = 8 out of 10.
-
-Image response for 35317:
-[IMAGE SIMILARITY] = 9 out of 10.
-
-Image response for 18908:
-[IMAGE SIMILARITY] = 9 out of 10.
-
-Image response for 18680:
-[IMAGE SIMILARITY] = 7 out of 10.
-
-Image response for 18236:
-[IMAGE SIMILARITY] = 0 out of 10.
-
-Image response for 36606:
-[IMAGE SIMILARITY] = 9 out of 10.
-
-Image response for 18484:
-[IMAGE SIMILARITY] = 0 out of 10.
-
-Image response for 36608:
-[IMAGE SIMILARITY] = 9 out of 10.
-
-Image response for 37020:
-[IMAGE SIMILARITY] = 9 out of 10.
-
-Qwen-only reranking result
- 1. ID=35317 | ori=0.094 | image=9 | final=9.000000
- 2. ID=18908 | ori=-0.667 | image=9 | final=9.000000
- 3. ID=36606 | ori=-1.133 | image=9 | final=9.000000
- 4. ID=36608 | ori=-1.161 | image=9 | final=9.000000
- 5. ID=37020 | ori=-1.305 | image=9 | final=9.000000
- 6. ID=18359 | ori=0.104 | image=8 | final=8.000000
- 7. ID=37094 | ori=0.186 | image=7 | final=7.000000  <-- ground truth
- 8. ID=18680 | ori=-0.881 | image=7 | final=7.000000
- 9. ID=18236 | ori=-1.028 | image=0 | final=0.000000
-10. ID=18484 | ori=-1.138 | image=0 | final=0.000000
-
-Base rank: 0 (1th position)
-LLM rank: 6 (7th position)
-Rank improved: False
-Hits@1 correct: False
-Time cost: 11.89s
-
-================================================================================
-Query ID: 25148
-Query name: 教宗沙德
-Reference ID: 35185
-Base rank: 0 (1th position)
-Candidates: [35185, 20664, 37346, 19558, 16690, 17067, 38650, 37828, 34748, 15953]
-Ranking rule: final_score = Qwen image_score
-
-Image response for 35185:
-[IMAGE SIMILARITY] = 8 out of 10.
-
-Image response for 20664:
-[IMAGE SIMILARITY] = 2 out of 10.
-
-Image response for 37346:
-[IMAGE SIMILARITY] = 9 out of 10.
-
-Image response for 19558:
-[IMAGE SIMILARITY] = 7 out of 10.
-
-Image response for 16690:
-[IMAGE SIMILARITY] = 9 out of 10.
-
-Image response for 17067:
-[IMAGE SIMILARITY] = 0 out of 10.
-
-Image response for 38650:
-[IMAGE SIMILARITY] = 10 out of 10.
-
-Image response for 37828:
-[IMAGE SIMILARITY] = 9 out of 10.
-
-Image response for 34748:
-[IMAGE SIMILARITY] = 0 out of 10.
-
-Image response for 15953:
-[IMAGE SIMILARITY] = 10 out of 10.
-
-Qwen-only reranking result
- 1. ID=38650 | ori=-1.166 | image=10 | final=10.000000
- 2. ID=15953 | ori=-1.410 | image=10 | final=10.000000
- 3. ID=37346 | ori=-0.045 | image=9 | final=9.000000
- 4. ID=16690 | ori=-0.967 | image=9 | final=9.000000
- 5. ID=37828 | ori=-1.176 | image=9 | final=9.000000
- 6. ID=35185 | ori=0.089 | image=8 | final=8.000000  <-- ground truth
- 7. ID=19558 | ori=-0.836 | image=7 | final=7.000000
- 8. ID=20664 | ori=0.064 | image=2 | final=2.000000
- 9. ID=17067 | ori=-1.023 | image=0 | final=0.000000
-10. ID=34748 | ori=-1.273 | image=0 | final=0.000000
-
-Base rank: 0 (1th position)
-LLM rank: 5 (6th position)
-Rank improved: False
-Hits@1 correct: False
-Time cost: 11.28s
-
-================================================================================
-Qwen-only Reranking Summary
-Total entities: 2
-Hits@1 correct: 0/2
-Improved: 0/2
-Skipped: 0/2
-ID=24135 | base_rank=0 | llm_rank=6 | correct=False | skipped=False
-ID=25148 | base_rank=0 | llm_rank=5 | correct=False | skipped=False
-Total time: 23.18s
