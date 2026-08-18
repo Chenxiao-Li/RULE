@@ -1,0 +1,218 @@
+Loading weights:   0%|          | 0/1353 [00:00<?, ?it/s]Loading weights:   0%|          | 1/1353 [00:00<04:00,  5.61it/s]Loading weights:   0%|          | 4/1353 [00:00<01:29, 15.02it/s]Loading weights:   1%|          | 14/1353 [00:00<00:48, 27.37it/s]Loading weights:   2%|▏         | 28/1353 [00:00<00:24, 53.17it/s]Loading weights:   3%|▎         | 35/1353 [00:00<00:25, 51.25it/s]Loading weights:   3%|▎         | 41/1353 [00:00<00:27, 47.75it/s]Loading weights:   4%|▎         | 48/1353 [00:01<00:24, 52.92it/s]Loading weights:   4%|▍         | 54/1353 [00:01<00:28, 45.03it/s]Loading weights:   5%|▍         | 64/1353 [00:01<00:22, 57.14it/s]Loading weights:   5%|▌         | 71/1353 [00:01<00:23, 54.47it/s]Loading weights:   6%|▌         | 77/1353 [00:01<00:28, 44.38it/s]Loading weights:   7%|▋         | 88/1353 [00:01<00:22, 57.34it/s]Loading weights:   7%|▋         | 95/1353 [00:01<00:23, 54.48it/s]Loading weights:   8%|▊         | 102/1353 [00:02<00:26, 47.11it/s]Loading weights:   8%|▊         | 112/1353 [00:02<00:21, 57.87it/s]Loading weights:   9%|▉         | 119/1353 [00:02<00:22, 54.70it/s]Loading weights:   9%|▉         | 126/1353 [00:02<00:26, 47.08it/s]Loading weights:  10%|█         | 136/1353 [00:02<00:20, 58.04it/s]Loading weights:  11%|█         | 143/1353 [00:02<00:21, 55.15it/s]Loading weights:  11%|█         | 150/1353 [00:03<00:25, 46.95it/s]Loading weights:  12%|█▏        | 160/1353 [00:03<00:20, 57.47it/s]Loading weights:  12%|█▏        | 167/1353 [00:03<00:21, 54.96it/s]Loading weights:  13%|█▎        | 174/1353 [00:03<00:25, 46.97it/s]Loading weights:  14%|█▎        | 184/1353 [00:03<00:20, 57.60it/s]Loading weights:  14%|█▍        | 191/1353 [00:03<00:21, 54.64it/s]Loading weights:  15%|█▍        | 198/1353 [00:04<00:24, 47.09it/s]Loading weights:  15%|█▌        | 209/1353 [00:04<00:21, 53.40it/s]Loading weights:  16%|█▌        | 216/1353 [00:04<00:20, 56.56it/s]Loading weights:  16%|█▋        | 223/1353 [00:04<00:22, 51.08it/s]Loading weights:  17%|█▋        | 229/1353 [00:04<00:24, 46.52it/s]Loading weights:  18%|█▊        | 240/1353 [00:04<00:18, 60.03it/s]Loading weights:  18%|█▊        | 247/1353 [00:04<00:21, 51.65it/s]Loading weights:  19%|█▉        | 256/1353 [00:04<00:18, 59.56it/s]Loading weights:  19%|█▉        | 263/1353 [00:05<00:19, 55.95it/s]Loading weights:  20%|█▉        | 270/1353 [00:05<00:23, 46.69it/s]Loading weights:  21%|██        | 280/1353 [00:05<00:18, 56.97it/s]Loading weights:  21%|██        | 287/1353 [00:05<00:20, 52.47it/s]Loading weights:  22%|██▏       | 293/1353 [00:05<00:20, 51.12it/s]Loading weights:  22%|██▏       | 302/1353 [00:05<00:17, 60.02it/s]Loading weights:  23%|██▎       | 309/1353 [00:06<00:21, 48.12it/s]Loading weights:  23%|██▎       | 317/1353 [00:06<00:19, 52.63it/s]Loading weights:  24%|██▍       | 324/1353 [00:06<00:18, 55.93it/s]Loading weights:  24%|██▍       | 331/1353 [00:06<00:20, 49.18it/s]Loading weights:  25%|██▌       | 340/1353 [00:06<00:17, 58.09it/s]Loading weights:  26%|██▌       | 347/1353 [00:06<00:18, 55.09it/s]Loading weights:  26%|██▌       | 353/1353 [00:06<00:19, 51.12it/s]Loading weights:  27%|██▋       | 359/1353 [00:06<00:18, 52.73it/s]Loading weights:  27%|██▋       | 365/1353 [00:07<00:19, 51.45it/s]Loading weights:  27%|██▋       | 371/1353 [00:07<00:18, 53.58it/s]Loading weights:  28%|██▊       | 377/1353 [00:07<00:21, 44.47it/s]Loading weights:  29%|██▉       | 389/1353 [00:07<00:17, 54.39it/s]Loading weights:  29%|██▉       | 396/1353 [00:07<00:16, 57.55it/s]Loading weights:  30%|██▉       | 402/1353 [00:07<00:19, 47.71it/s]Loading weights:  30%|███       | 412/1353 [00:07<00:15, 59.22it/s]Loading weights:  31%|███       | 419/1353 [00:08<00:17, 53.64it/s]Loading weights:  31%|███▏      | 425/1353 [00:08<00:17, 52.04it/s]Loading weights:  32%|███▏      | 432/1353 [00:08<00:16, 55.86it/s]Loading weights:  32%|███▏      | 438/1353 [00:08<00:19, 46.39it/s]Loading weights:  33%|███▎      | 448/1353 [00:08<00:15, 57.58it/s]Loading weights:  34%|███▎      | 455/1353 [00:08<00:17, 52.55it/s]Loading weights:  34%|███▍      | 461/1353 [00:08<00:17, 51.93it/s]Loading weights:  35%|███▍      | 468/1353 [00:09<00:15, 56.19it/s]Loading weights:  35%|███▌      | 474/1353 [00:09<00:18, 47.04it/s]Loading weights:  36%|███▌      | 485/1353 [00:09<00:15, 55.62it/s]Loading weights:  36%|███▋      | 492/1353 [00:09<00:14, 58.65it/s]Loading weights:  37%|███▋      | 499/1353 [00:09<00:16, 50.43it/s]Loading weights:  38%|███▊      | 508/1353 [00:09<00:14, 58.58it/s]Loading weights:  38%|███▊      | 515/1353 [00:09<00:15, 54.97it/s]Loading weights:  39%|███▊      | 521/1353 [00:10<00:16, 50.73it/s]Loading weights:  39%|███▉      | 528/1353 [00:10<00:15, 54.00it/s]Loading weights:  39%|███▉      | 534/1353 [00:10<00:17, 45.71it/s]Loading weights:  40%|████      | 544/1353 [00:10<00:14, 57.59it/s]Loading weights:  41%|████      | 551/1353 [00:10<00:14, 54.03it/s]Loading weights:  41%|████      | 557/1353 [00:10<00:15, 50.46it/s]Loading weights:  42%|████▏     | 564/1353 [00:10<00:14, 54.69it/s]Loading weights:  42%|████▏     | 570/1353 [00:11<00:17, 45.60it/s]Loading weights:  43%|████▎     | 580/1353 [00:11<00:13, 57.56it/s]Loading weights:  43%|████▎     | 587/1353 [00:11<00:13, 54.79it/s]Loading weights:  44%|████▍     | 593/1353 [00:11<00:15, 50.45it/s]Loading weights:  44%|████▍     | 602/1353 [00:11<00:12, 59.43it/s]Loading weights:  45%|████▌     | 609/1353 [00:11<00:14, 51.22it/s]Loading weights:  46%|████▌     | 616/1353 [00:11<00:13, 55.40it/s]Loading weights:  46%|████▌     | 623/1353 [00:11<00:13, 53.09it/s]Loading weights:  46%|████▋     | 629/1353 [00:12<00:16, 43.84it/s]Loading weights:  47%|████▋     | 638/1353 [00:12<00:13, 53.26it/s]Loading weights:  48%|████▊     | 644/1353 [00:12<00:13, 51.74it/s]Loading weights:  48%|████▊     | 652/1353 [00:12<00:12, 57.85it/s]Loading weights:  49%|████▊     | 659/1353 [00:12<00:13, 52.22it/s]Loading weights:  49%|████▉     | 665/1353 [00:12<00:13, 50.87it/s]Loading weights:  50%|████▉     | 673/1353 [00:12<00:11, 57.89it/s]Loading weights:  50%|█████     | 680/1353 [00:13<00:13, 50.24it/s]Loading weights:  51%|█████     | 686/1353 [00:13<00:16, 40.78it/s]Loading weights:  52%|█████▏    | 700/1353 [00:13<00:10, 60.23it/s]Loading weights:  52%|█████▏    | 708/1353 [00:13<00:11, 55.97it/s]Loading weights:  53%|█████▎    | 715/1353 [00:13<00:12, 49.37it/s]Loading weights:  54%|█████▎    | 724/1353 [00:13<00:13, 46.35it/s]Loading weights:  54%|█████▍    | 736/1353 [00:14<00:10, 60.17it/s]Loading weights:  55%|█████▍    | 744/1353 [00:14<00:10, 55.96it/s]Loading weights:  56%|█████▌    | 751/1353 [00:14<00:11, 51.62it/s]Loading weights:  56%|█████▌    | 760/1353 [00:14<00:10, 59.28it/s]Loading weights:  57%|█████▋    | 767/1353 [00:14<00:10, 56.11it/s]Loading weights:  57%|█████▋    | 774/1353 [00:14<00:12, 47.91it/s]Loading weights:  58%|█████▊    | 780/1353 [00:14<00:11, 50.39it/s]Loading weights:  58%|█████▊    | 786/1353 [00:15<00:11, 49.90it/s]Loading weights:  59%|█████▉    | 796/1353 [00:15<00:09, 60.64it/s]Loading weights:  59%|█████▉    | 803/1353 [00:15<00:10, 54.53it/s]Loading weights:  60%|█████▉    | 809/1353 [00:15<00:10, 52.00it/s]Loading weights:  60%|██████    | 816/1353 [00:15<00:09, 55.82it/s]Loading weights:  61%|██████    | 822/1353 [00:15<00:11, 46.66it/s]Loading weights:  61%|██████▏   | 832/1353 [00:15<00:08, 58.17it/s]Loading weights:  62%|██████▏   | 839/1353 [00:16<00:09, 55.37it/s]Loading weights:  62%|██████▏   | 845/1353 [00:16<00:09, 51.25it/s]Loading weights:  63%|██████▎   | 851/1353 [00:16<00:12, 41.20it/s]Loading weights:  64%|██████▍   | 863/1353 [00:16<00:08, 57.06it/s]Loading weights:  64%|██████▍   | 870/1353 [00:16<00:09, 50.18it/s]Loading weights:  65%|██████▍   | 878/1353 [00:16<00:10, 44.35it/s]Loading weights:  66%|██████▌   | 890/1353 [00:17<00:07, 58.57it/s]Loading weights:  66%|██████▋   | 898/1353 [00:17<00:07, 57.91it/s]Loading weights:  67%|██████▋   | 905/1353 [00:17<00:08, 54.70it/s]Loading weights:  67%|██████▋   | 912/1353 [00:17<00:07, 57.41it/s]Loading weights:  68%|██████▊   | 919/1353 [00:17<00:08, 49.56it/s]Loading weights:  69%|██████▊   | 928/1353 [00:17<00:07, 58.12it/s]Loading weights:  69%|██████▉   | 935/1353 [00:17<00:07, 55.30it/s]Loading weights:  70%|██████▉   | 941/1353 [00:17<00:08, 51.19it/s]Loading weights:  70%|███████   | 948/1353 [00:18<00:07, 55.23it/s]Loading weights:  71%|███████   | 954/1353 [00:18<00:08, 45.89it/s]Loading weights:  83%|████████▎ | 1121/1353 [00:18<00:00, 409.86it/s]Loading weights:  99%|█████████▉| 1342/1353 [00:18<00:00, 845.13it/s]Loading weights: 100%|██████████| 1353/1353 [00:18<00:00, 73.10it/s] 
+
+================================================================================
+Query ID: 24135
+Query name: 阿卜杜勒-哈米德二世
+Reference ID: 37094
+Base rank: 0 (1th position)
+Candidates: [37094, 18359, 35317, 18908, 18680, 18236, 36606, 18484, 36608, 37020]
+
+Source initial description:
+Entity name: 阿卜杜勒-哈米德二世. Attribute: military: 奧斯曼帝國的衰落. Attribute: sultan Name: 阿卜杜勒-哈米德二世. Attribute: years: 1876. Attribute: image Portrait: Sultan Abdul Hamid II of the Ottoman Empire.jpg. Relation: has relation before to 穆拉德五世. Relation: has relation after to 穆罕默德五世 (奥斯曼帝国). Relation: is the target of relation monarch from 艾哈迈德·陶菲克帕夏. Relation: is the target of relation before from 穆罕默德五世 (奥斯曼帝国). Relation: is the target of relation monarch from 侯赛因·希勒米帕夏.
+
+Source visual supplement:
+The image directly depicts a formal portrait of a man seated in ornate attire, holding a cane, which aligns with the description provided as "Sultan Abdul Hamid II of the Ottoman Empire." The attire, including the elaborate embroidery and the ceremonial sword, suggests his high-ranking status, consistent with his role as a
+
+CANDIDATE_1 ID=37094 initial description:
+Entity name: Abdul Hamid II. Attribute: date Of Death: 1918-02-10. Attribute: succession: Caliph of the Ottoman Caliphate. Attribute: name: عبد الحميد ثانی. Attribute: spouse: Safinaz Nurefzun Kadınefendi. Attribute: reign Type: Reign. Attribute: death Date: 1918-02-10. Attribute: mother: • Rahime Perestu Sultan. Attribute: coronation: 1876-09-07. Attribute: caption: Abdul Hamid II as a Şehzade in Balmoral Castle, Scotland, 1867. Attribute: spouse Type: Consorts. Attribute: birth Date: 1842-09-21. Attribute: name: عبد الحميد ثانی. Attribute: spouse: Dilpesend Kadınefendi. Attribute: name: Hamid, Abdul. Attribute: spouse: Sazkâr Hanımefendi. Attribute: spouse: Emsalinur Kadınefendi. Attribute: signature: Tughra of Abdülhamid II.svg. Attribute: years: --08-31. Attribute: era Dates: 1828. Attribute: name: Hamid, Abdul. Attribute: burial Place: Sultan Mahmud II Tomb. Attribute: name: Abdul Hamid II. Attribute: succession: 34. Attribute: date Of Birth: 1842-09-22. Attribute: name: Abdul Hamid II.
+
+CANDIDATE_1 visual supplement:
+The image directly depicts a man dressed in formal attire, seated at a desk, which appears to be a historical photograph. This portrayal is consistent with the description provided for Abdul Hamid II, who is noted for his role as the Caliph of the Ottoman Caliphate. The image confirms the era and style of clothing
+
+CANDIDATE_2 ID=18359 initial description:
+Entity name: Mehmed VI. Attribute: reg Type: s. Attribute: years: --07-03. Attribute: succession: Caliph of the Ottoman Caliphate. Attribute: signature: Tughra of Mehmed VI.svg. Attribute: issue: Princess Rukiye Sabiha Sultan Hanım Efendi. Attribute: coronation: 1918-07-04. Attribute: death Date: 1926-05-16. Attribute: spoken: Your Imperial Majesty. Attribute: house Type: Dynasty. Attribute: colour: #FFFFFF. Attribute: successor: Empire abolished. Attribute: background: #CB2027. Attribute: caption: Photograph of Mehmet VI by Sébah & Joaillier, c. 1920. Attribute: issue: From the 3rd marriage:. Attribute: size: 50. Attribute: years: --11-01. Attribute: name: Mehmed VI. Attribute: reign: 1922-11-01. Attribute: reign: --07-03. Attribute: type: Royal. Attribute: reign Type: Pretence. Attribute: succession: 36. Attribute: reign: --11-19. Attribute: reign: 1922-11-19. Attribute: alternative: Sire. Attribute: birth Date: 1861-01-14. Attribute: reign: 1926-05-16. Relation: is the target of relation predecessor from Mehmed V.
+
+CANDIDATE_2 visual supplement:
+The image directly depicts a formal portrait of a man in elaborate military attire, seated with a serious expression, which aligns with the description of Mehmed VI as a figure of royal and imperial significance. The photograph, credited to Sébah & Joaillier and dated around 1920, confirms his status
+
+CANDIDATE_3 ID=35317 initial description:
+Entity name: Mehmed V. Attribute: succession: Caliph of the Ottoman Caliphate. Attribute: birth Date: 1844-11-02. Attribute: birth Place: Topkapı Palace, Constantinople, Ottoman Empire. Attribute: caption: --07-22. Attribute: signature: Tughra of Mehmed V.svg. Attribute: years: 27. Attribute: issue: Refia Sultan. Attribute: coronation: 1909-05-10. Attribute: house Type: Dynasty. Attribute: death Place: Yıldız Palace, Constantinople, Ottoman Empire. Attribute: issue: Şehzade Mehmed Ziyaeddin. Attribute: reg Type: Grand Viziers. Attribute: reign: --04-27. Attribute: succession: 35. Attribute: death Date: 1918-07-03. Relation: has relation predecessor to Mehmed VI. Relation: is the target of relation monarch from Hüseyin Hilmi Pasha. Relation: has relation father to Abdülmecid I. Relation: is the target of relation free from Istanbul University. Relation: is the target of relation before from Mehmed VI. Relation: has relation office to List of sultans of
+
+CANDIDATE_3 visual supplement:
+The image directly depicts a man in elaborate military attire, adorned with medals and insignia, suggesting a high-ranking official or ruler. This portrayal aligns with the description of Mehmed V as the Caliph of the Ottoman Caliphate, confirming his status as a significant historical figure. The image does not contradict any provided
+
+CANDIDATE_4 ID=18908 initial description:
+Entity name: Abdülaziz of the Ottoman Empire. Attribute: name: عبد العزيز. Attribute: spouse Type: Consorts. Attribute: signature: Tughra of Abdülaziz.JPG. Attribute: title: Sultan of the Ottoman Empire. Attribute: succession: 32. Attribute: succession: Caliph of the Ottoman Caliphate. Attribute: name: Abdülaziz. Attribute: name: عبد العزيز. Attribute: consort: yes. Attribute: name: Abdülaziz. Attribute: reign: --06-02. Attribute: death Date: 1876-06-04. Attribute: reign Type: Reign. Attribute: house Type: Dynasty. Attribute: pre Type: Predecessor. Attribute: caption: Sultan Abdülaziz during his visit to the United Kingdom in 1867. Attribute: spouse: Yildiz Hanimefendi. Attribute: suc Type: Successor. Attribute: birth Date: 1830-02-09. Attribute: years: --05-30. Relation: has relation before to Abdülmecid I. Relation: is the target of relation father from Abdülmecid II. Relation: has relation predecessor to Murad V. Relation: has relation office to List of
+
+CANDIDATE_4 visual supplement:
+The image directly depicts a portrait of a man wearing formal attire, including a distinctive hat and a sash with a star-shaped badge, suggesting a high-ranking official or noble figure. This portrayal aligns with the description of Abdülaziz of the Ottoman Empire as the Sultan and Caliph, confirming his status as a
+
+CANDIDATE_5 ID=18680 initial description:
+Entity name: Abdülmecid I. Attribute: succession: 31. Attribute: consort: yes. Attribute: suc Type: Successor. Attribute: spouse: Safderun Hanımefendi. Attribute: reign Type: Reign. Attribute: name: Abdulmecid I. Attribute: house Type: Dynasty. Attribute: pre Type: Predecessor. Attribute: date Of Death: 1861-06-25. Attribute: birth Date: 1823-04-25. Attribute: years: --07-02. Attribute: spouse: Nesrin Hanımefendi. Attribute: signature: Tughra of Abdülmecid I.JPG. Attribute: date Of Birth: 1823-04-25. Attribute: name: عبد المجيد اول. Attribute: name: Abdülmecid I. Attribute: spouse: Nev'eser Hanımefendi. Attribute: spouse Type: Consorts. Attribute: spouse: Hoşyar Kadınefendi. Attribute: spouse: Ceylanyar Hanımefendi. Attribute: spouse: Hüsnicenan Hanımefendi. Attribute: name: Abdülmecid I. Attribute: reign: --07-02. Attribute: spouse: Zerrin Melek Hanımefendi. Attribute: short Description: Sultan of the Ottoman Empire. Attribute: succession: Caliph of the Ottoman Caliphate. Attribute: spouse: Nalanıdil Hanımefendi. Attribute: death Date: 1861-06-25. Attribute: spouse: Nergizu
+
+CANDIDATE_5 visual supplement:
+The image is a formal portrait depicting a man dressed in elaborate attire characteristic of Ottoman nobility, including a distinctive turban and ornate clothing adorned with medals and insignia. While the image does not explicitly confirm the identity as Abdülmecid I, the style and regalia align with the description of a high
+
+CANDIDATE_6 ID=18236 initial description:
+Entity name: Sirajuddin of Perlis. Attribute: coronation: 2001-05-07. Attribute: full Name: Syed Sirajuddin ibni Syed Putra Jamalullail \n\nTuanku Syed Sirajuddin Ibni Almarhum Tuanku Syed Putra Jamalullail. Attribute: years: 2000. Attribute: issue: Sharifah Fazira. Attribute: heir Type: Heir apparent. Attribute: birth Date: 1943-05-17. Attribute: coronation: 2002-04-24. Attribute: reign: --04-17. Attribute: reign: --12-13. Attribute: suc Type: Heir apparent. Attribute: name: Tuanku Syed Sirajuddin Ibni Almarhum Tuanku Syed Putra Jamalullail (as the Yang di-Pertuan Agong and the Raja). Attribute: title: The Raja of Perlis. Attribute: name: Sirajuddin. Attribute: name: Syed Sirajuddin ibni Syed Putra Jamalullail (at birth). Attribute: years: 2001. Attribute: cor Type: Malaysia. Attribute: cor Type: Installation. Attribute: name: Sirajuddin. Relation: is the target of relation monarch from Abdullah Ahmad Badawi. Relation: has relation succession to Yang di-Pertuan Agong. Relation:
+
+CANDIDATE_6 visual supplement:
+The image depicts a man in formal attire, wearing a dark suit with a red tie and a traditional cap, which suggests a ceremonial or official context. While the image does not explicitly confirm the identity of the individual as Sirajuddin of Perlis, the formal dress and the presence of a traditional cap align with the
+
+CANDIDATE_7 ID=36606 initial description:
+Entity name: List of sultans of the Ottoman Empire. Attribute: style: His Imperial Majesty. Attribute: began: 1299-07-27. Attribute: residence: Palaces in Istanbul:\n*Topkapı \n*Dolmabahçe \n*Yıldız. Attribute: ended: 1922-11-01. Attribute: coatofarms: Osmanli-nisani.svg. Attribute: years: 1299. Attribute: title: Rulers of the Ottoman Empire. Attribute: border: imperial. Attribute: realm: the Ottoman Empire. Attribute: years: 1453. Relation: has relation last Monarch to Mehmed VI. Relation: is the target of relation office from Osman I. Relation: is the target of relation office from Selim I. Relation: is the target of relation office from Mehmed V. Relation: has relation caption to Suleiman the Magnificent. Relation: is the target of relation office from Orhan of the Ottoman Empire. Relation: is the target of relation title Leader from Ottoman Empire. Relation: is the target of relation office
+
+CANDIDATE_7 visual supplement:
+The image depicts the coat of arms of the Ottoman Empire, characterized by its intricate design featuring a crescent moon, star, and various symbols such as crossed cannons, a shield with a red field, and floral elements, all set against a radiant sunburst background. This emblem does not show the entity itself but serves as
+
+CANDIDATE_8 ID=18484 initial description:
+Entity name: Emperor Kōmei. Attribute: coronation: 1846-03-10. Attribute: birth Date: 1831-07-22. Attribute: reg Type: Shoguns. Attribute: years: --03-10. Attribute: name: Emperor Kōmei. Attribute: name: 孝明天皇. Attribute: name: Emperor Kōmei. Attribute: issue: 6. Attribute: cor Type: Japan. Attribute: death Date: 1867-01-30. Attribute: name: 孝明天皇. Attribute: reign: --03-10. Relation: is the target of relation monarch from Tokugawa Yoshinobu. Relation: is the target of relation spouse from Nakayama Yoshiko. Relation: is the target of relation spouse from Empress Eishō. Relation: is the target of relation father from Emperor Meiji. Relation: has relation place Of Burial to Kyoto. Relation: has relation spouse to Empress Eishō. Relation: is the target of relation monarch from Tokugawa Iemochi. Relation: has relation succession to Emperor of Japan. Relation: has relation house to Imperial House of Japan.
+
+CANDIDATE_8 visual supplement:
+The image appears to be a historical portrait of a person dressed in traditional Japanese attire, likely a depiction of an emperor given the style of clothing and the formal nature of the photograph. While the image does not explicitly confirm the identity as Emperor Kōmei, it aligns with the description of a Japanese imperial figure from
+
+CANDIDATE_9 ID=36608 initial description:
+Entity name: Faisal I of Iraq. Attribute: issue: Princess Raifi'a of Iraq. Attribute: commons: Category:Faisal I of Iraq. Attribute: death Place: Bern, Switzerland. Attribute: name: Faisal I. Attribute: full Name: Faisal bin Hussein bin Ali al-Hashimi. Attribute: reg Type: Prime Ministers. Attribute: wikt: no. Attribute: death Date: 1933-09-08. Attribute: years: --07-24. Attribute: years: --08-23. Attribute: name: Faisal bin Hussein bin Ali al-Hashimi. Attribute: author: no. Attribute: reason: Kingdom abolished in 1920. Attribute: successor: Monarchy abolished. Attribute: reign: --03-08. Attribute: years: --03-08. Attribute: predecessor: Military occupation. Attribute: place Of Burial: Royal Mausoleum, Adhamiyah. Attribute: mother: Abdliya bint Abdullah. Attribute: reign: --08-23. Attribute: birth Date: 1885-05-20. Attribute: caption: King Faisal of Iraq in 1933. Relation: has relation house to Hashemites. Relation: is the target of relation leader from Kingdom of
+
+CANDIDATE_9 visual supplement:
+The image directly depicts a formal portrait of a man in military attire adorned with medals and insignia, suggesting his high-ranking status. This portrayal aligns with the description of Faisal I of Iraq, as he was known for his role as a monarch and military leader. The image confirms his regal and authoritative presence,
+
+CANDIDATE_10 ID=37020 initial description:
+Entity name: Abdul Rahman of Negeri Sembilan. Attribute: cor Type: Malaysia. Attribute: cor Type: Installation. Attribute: name: Tunku Abdul Rahman ibni Tunku Muhammad (at birth). Attribute: spouse: Dulcie Campbell. Attribute: spouse: Tunku Zaidah binti Tunku Zakaria. Attribute: death Date: 1960-04-01. Attribute: years: 1957. Attribute: birth Date: 1895-08-24. Attribute: issue: Tuanku Jaafar. Attribute: date Of Burial: 1960-04-05. Attribute: title: Yang di-Pertuan Agong. Attribute: name: Abdul Rahman. Attribute: reign: --08-03. Attribute: full Name: Tunku Abdul Rahman ibni Tunku Muhammad \n\nTuanku Abdul Rahman ibni Almarhum Tuanku Muhammad. Attribute: predecessor: Position Established. Attribute: issue: Tunku Abdullah. Attribute: reign: --08-31. Attribute: coronation: 1934-04-25. Attribute: name: Tuanku Abdul Rahman ibni Almarhum Tuanku Muhammad (as Yang di-Pertuan Besar and Yang di-Pertuan Agong). Attribute: name: Abdul Rahman. Attribute: issue Link: #Family life. Attribute: years: 1933. Attribute:
+
+CANDIDATE_10 visual supplement:
+The image appears to be a historical photograph showing a ceremonial setting with individuals in formal attire, likely depicting a significant event such as an installation or coronation. The caption suggests a connection to Tuanku Abdul Rahman, indicating his role as the Yang di-Pertuan Besar of Negeri Sembilan. While
+
+Candidate discriminative differences:
+### Comparative Analysis of Anonymous Candidate Entities
+
+#### **CANDIDATE_1**
+- **Entity Type:** Historical Figure (Caliph)
+- **Attributes:** 
+  - Date of Death: 1918-02-10
+  - Succession: Caliph of the Ottoman Caliphate
+
+Final alignment response:
+[RANKING] = CANDIDATE_4 > CANDIDATE_1 > CANDIDATE_3 > CANDIDATE_5 > CANDIDATE_2 > CANDIDATE_9 > CANDIDATE_8 > CANDIDATE_6 > CANDIDATE_7 > CANDIDATE_10
+
+Discriminative reasoning reranking result
+ 1. CANDIDATE_4 | ID=18908 | ori=-0.667 | unique_score=9
+ 2. CANDIDATE_1 | ID=37094 | ori=0.186 | unique_score=8  <-- ground truth
+ 3. CANDIDATE_3 | ID=35317 | ori=0.094 | unique_score=7
+ 4. CANDIDATE_5 | ID=18680 | ori=-0.881 | unique_score=6
+ 5. CANDIDATE_2 | ID=18359 | ori=0.104 | unique_score=5
+ 6. CANDIDATE_9 | ID=36608 | ori=-1.161 | unique_score=4
+ 7. CANDIDATE_8 | ID=18484 | ori=-1.138 | unique_score=3
+ 8. CANDIDATE_6 | ID=18236 | ori=-1.028 | unique_score=2
+ 9. CANDIDATE_7 | ID=36606 | ori=-1.133 | unique_score=1
+10. CANDIDATE_10 | ID=37020 | ori=-1.305 | unique_score=0
+
+Base rank: 0 (1th position)
+LLM rank: 1 (2th position)
+Rank improved: False
+Hits@1 correct: False
+Time cost: 179.03s
+
+================================================================================
+Query ID: 25148
+Query name: 教宗沙德
+Reference ID: 35185
+Base rank: 0 (1th position)
+Candidates: [35185, 20664, 37346, 19558, 16690, 17067, 38650, 37828, 34748, 15953]
+
+Source initial description:
+Entity name: 教宗沙德. Attribute: birth Date: 120. Attribute: term End: 175. Attribute: birthplace: 意大利丰迪. Attribute: term Start: 166. Attribute: type: Pope. Attribute: birth Name: Soter. Attribute: death Date: 175. Attribute: chinese Name: 教宗沙德. Attribute: deathplace: 意大利罗马. Relation: has relation successor to 教宗义禄. Relation: has relation predecessor to 教宗启德. Relation: is the target of relation predecessor from 教宗义禄. Relation: is the target of relation successor from 教宗启德.
+
+Source visual supplement:
+The image depicts a papal portrait, characterized by a halo and traditional attire, which suggests it represents a Pope. While the image does not explicitly confirm the identity as Pope Soter (教宗沙德), it aligns with the description of a Pope given in the provided attributes. The portrait does not provide direct confirmation
+
+CANDIDATE_1 ID=35185 initial description:
+Entity name: Pope Soter. Attribute: term End: 174. Attribute: years: 167. Attribute: term Start: c. 167. Attribute: name: Soter. Attribute: type: Pope. Attribute: name: Soter. Attribute: feast Day: --04-22. Attribute: honorific Prefix: Pope Saint. Attribute: birth Name: Soter. Attribute: death Date: c. 174. Relation: has relation residence to Rome. Relation: has relation death Place to Roman Empire. Relation: is the target of relation predecessor from Pope Anicetus. Relation: has relation office to Pope. Relation: has relation before to Pope Anicetus. Relation: has relation residence to Roman Empire. Relation: is the target of relation before from Pope Eleuterus. Relation: has relation predecessor to Pope Eleuterus.
+
+CANDIDATE_1 visual supplement:
+This image is a black-and-white illustration depicting a historical figure identified as "SOTER I PP. CAMPA NVS," which translates to "Pope Soter I of Campania." The illustration portrays a man with a beard and a halo, suggesting his status as a saint or religious leader. The text
+
+CANDIDATE_2 ID=20664 initial description:
+Entity name: Pope Victor I. Attribute: death Date: 199. Attribute: years: 189. Attribute: term Start: 189. Attribute: type: Pope. Attribute: honorific Prefix: Pope Saint. Attribute: other: Victor. Attribute: name: Victor I. Attribute: term End: 199. Attribute: name: Victor I. Attribute: birth Name: Victor. Attribute: feast Day: --07-28. Attribute: birth Date: date unknown. Relation: is the target of relation predecessor from Pope Eleuterus. Relation: has relation predecessor to Pope Zephyrinus. Relation: is the target of relation before from Pope Zephyrinus. Relation: has relation office to Pope. Relation: has relation residence to Roman Empire. Relation: has relation residence to Rome. Relation: has relation before to Pope Eleuterus.
+
+CANDIDATE_2 visual supplement:
+The image directly depicts a portrait of a figure identified as "Victor I," with the title "PP. AFER" beneath, which likely stands for "Papa Africano" (African Pope). The portrait includes a halo, suggesting sainthood, and the figure is dressed in attire consistent with pap
+
+CANDIDATE_3 ID=37346 initial description:
+Entity name: Pope Pius I. Attribute: term Start: c. 140. Attribute: years: 140. Attribute: birth Date: c. late 1st century. Attribute: name: Pius I. Attribute: feast Day: --07-11. Attribute: type: Pope. Attribute: honorific Prefix: Pope Saint. Attribute: name: Pius I. Attribute: term End: c. 155. Attribute: other: Pius. Attribute: death Date: c. 155. Attribute: birth Name: Pius. Relation: has relation death Place to Italy. Relation: has relation predecessor to Pope Anicetus. Relation: has relation office to Pope. Relation: has relation before to Pope Hyginus. Relation: has relation residence to Roman Empire. Relation: is the target of relation before from Pope Anicetus. Relation: has relation residence to Rome. Relation: is the target of relation predecessor from Pope Hyginus.
+
+CANDIDATE_3 visual supplement:
+The image depicts a mosaic-style portrait of a figure identified as a pope, characterized by a halo, suggesting sainthood, and traditional papal attire. This image does not directly show Pope Pius I himself but rather represents an artistic interpretation of a pope, likely intended to symbolize him based on common iconography for
+
+CANDIDATE_4 ID=19558 initial description:
+Entity name: Pope Anicetus. Attribute: term End: --04-20. Attribute: feast Day: --04-17. Attribute: name: Anicetus. Attribute: honorific Prefix: Pope Saint. Attribute: name: Anicetus. Attribute: birth Name: Anicetus. Attribute: type: Pope. Attribute: birth Date: late 1st century. Attribute: attributes: Papal tiara, palm branch. Attribute: years: 154. Attribute: feast Day: --04-20. Attribute: death Date: --04-20. Attribute: term Start: c. 157. Relation: has relation residence to Rome. Relation: is the target of relation predecessor from Pope Pius I. Relation: has relation death Place to Homs. Relation: has relation predecessor to Pope Soter. Relation: has relation residence to Roman Empire. Relation: has relation office to Pope. Relation: is the target of relation before from Pope Soter. Relation: has relation before to Pope Pius I.
+
+CANDIDATE_4 visual supplement:
+The image depicts a painted portrait of a figure dressed in papal attire, including a red robe and a white garment with a cross, suggesting a depiction of a pope. This is likely an artistic representation rather than a direct image of the entity itself. The attributes such as the papal attire confirm the entity's role as
+
+CANDIDATE_5 ID=16690 initial description:
+Entity name: Pope Pelagius I. Attribute: name: Pelagius I. Attribute: other: Pelagius. Attribute: birth Name: Pelagius. Attribute: honorific Prefix: Pope. Attribute: term End: 0561-03-04. Attribute: birth Date: ???. Attribute: image Size: 220. Attribute: name: Pelagius I. Attribute: type: Pope. Attribute: years: 556. Attribute: term Start: 0556-04-16. Attribute: death Date: 0561-03-04. Relation: has relation before to Pope Vigilius. Relation: has relation residence to Byzantine Empire. Relation: has relation death Place to Rome. Relation: is the target of relation predecessor from Pope Vigilius. Relation: has relation office to Pope. Relation: is the target of relation before from Pope John III. Relation: has relation residence to Rome. Relation: has relation predecessor to Pope John III.
+
+CANDIDATE_5 visual supplement:
+The image directly depicts a mosaic portrait of a bearded man wearing papal attire, including a tiara with a cross, which is indicative of a pope. This portrait appears to represent Pope Pelagius I, as suggested by the accompanying text "S. PELAGIUS I" and the dates "5
+
+CANDIDATE_6 ID=17067 initial description:
+Entity name: Pope Dionysius. Attribute: name: Dionysius. Attribute: attributes: Book. Attribute: feast Day: --12-26. Attribute: image Size: 240. Attribute: name: Dionysius. Attribute: honorific Prefix: Pope Saint. Attribute: term Start: 0259-07-22. Attribute: type: Pope. Attribute: death Date: 0268-12-26. Attribute: years: 259. Attribute: birth Name: Dionysius. Attribute: attributes: Papal vestments. Attribute: birth Date: ???. Attribute: term End: 0268-12-26. Relation: has relation death Place to Greece. Relation: is the target of relation before from Pope Felix I. Relation: is the target of relation predecessor from Pope Sixtus II. Relation: has relation residence to Roman Empire. Relation: has relation predecessor to Pope Felix I. Relation: has relation before to Pope Sixtus II. Relation: has relation residence to Rome. Relation: has relation office to Pope.
+
+CANDIDATE_6 visual supplement:
+The image depicts a fresco portraying a saintly figure seated on a throne, adorned with papal vestments and holding a book, which aligns with the attributes mentioned in the description such as "Book" and "Papal vestments." The figure is crowned with a halo, signifying sanctity, and
+
+CANDIDATE_7 ID=38650 initial description:
+Entity name: Pope John III. Attribute: term End: 0574-07-13. Attribute: type: Pope. Attribute: birth Name: Catelinus. Attribute: death Date: 0574-07-13. Attribute: birth Date: ???. Attribute: other: John. Attribute: honorific Prefix: Pope. Attribute: image Size: 220. Attribute: name: John III. Attribute: years: 561. Attribute: term Start: 0561-07-17. Attribute: name: John III. Relation: has relation office to Pope. Relation: has relation before to Pope Pelagius I. Relation: has relation residence to Rome. Relation: has relation death Place to Byzantine Empire. Relation: has relation residence to Byzantine Empire. Relation: has relation death Place to Rome. Relation: is the target of relation before from Pope Benedict I. Relation: has relation predecessor to Pope Benedict I. Relation: is the target of relation predecessor from Pope Pelagius I.
+
+CANDIDATE_7 visual supplement:
+The image depicts a mosaic portrait of a bearded man wearing a papal tiara, which suggests it represents a pope. While the image does not explicitly confirm the identity as Pope John III, the visual elements align with the description of a pope, supporting the context provided by the knowledge graph. The mosaic style and attire
+
+CANDIDATE_8 ID=37828 initial description:
+Entity name: Pope Conon. Attribute: term End: 0687-09-21. Attribute: birth Name: ???. Attribute: name: Conon. Attribute: name: Conon. Attribute: birth Date: 630. Attribute: years: 686. Attribute: term Start: 0686-10-21. Attribute: death Date: 0687-09-21. Attribute: image Size: 220. Attribute: type: Pope. Attribute: honorific Prefix: Pope. Relation: has relation predecessor to Pope Sergius I. Relation: has relation office to Pope. Relation: is the target of relation predecessor from Pope John V. Relation: has relation residence to Byzantine Empire. Relation: has relation before to Pope John V. Relation: has relation residence to Rome. Relation: is the target of relation before from Pope Sergius I. Relation: has relation death Place to Byzantine Empire.
+
+CANDIDATE_8 visual supplement:
+The image directly depicts a portrait of a figure identified as "Conon," labeled with the number 83, suggesting its place in a sequence of popes. The portrait shows a man wearing papal attire, including a pallium and a mitre, which aligns with the description of Pope Conon as a
+
+CANDIDATE_9 ID=34748 initial description:
+Entity name: Pope Vigilius. Attribute: image Size: 220. Attribute: term Start: 0537-03-29. Attribute: type: Pope. Attribute: honorific Prefix: Pope. Attribute: name: Vigilius. Attribute: term End: 0555-06-07. Attribute: death Date: 0555-06-07. Attribute: years: 537. Attribute: name: Vigilius. Attribute: birth Name: Vigilius. Relation: is the target of relation before from Pope Pelagius I. Relation: has relation office to Pope. Relation: has relation predecessor to Pope Pelagius I. Relation: has relation death Place to Rome. Relation: has relation before to Pope Silverius. Relation: has relation residence to Byzantine Empire.
+
+CANDIDATE_9 visual supplement:
+The image directly depicts a portrait of Pope Vigilius, encased in an ornate circular frame with decorative elements surrounding it. This is a direct representation of the entity itself, showing him as a religious figure wearing papal attire, including a pallium and a mitre. The image confirms his role as a Pope
+
+CANDIDATE_10 ID=15953 initial description:
+Entity name: Pope Mark. Attribute: term Start: 0336-01-18. Attribute: death Date: 0336-10-07. Attribute: feast Day: --10-07. Attribute: name: Mark. Attribute: relstyle: Holy Father. Attribute: name: Mark. Attribute: type: Pope. Attribute: honorific Prefix: Pope Saint. Attribute: offstyle: Your Holiness. Attribute: dipstyle: His Holiness. Attribute: papal Name: Pope Mark. Attribute: term End: 0336-10-07. Attribute: image Size: 220. Attribute: birth Name: Marcus. Attribute: birth Date: ???. Attribute: years: 336. Relation: has relation predecessor to Pope Julius I. Relation: is the target of relation before from Pope Julius I. Relation: has relation death Place to Rome. Relation: has relation office to Pope. Relation: has relation before to Pope Sylvester I. Relation: has relation residence to Rome.
+
+CANDIDATE_10 visual supplement:
+The image depicts a portrait of St. Mark, framed with ornate decorative elements, including floral motifs and a number "34" indicating its place in a series. This is an indirectly related portrait, as it represents St. Mark rather than Pope Mark, who is the subject of the provided description. The image confirms
+
+Candidate discriminative differences:
+### Comparative Analysis of Anonymous Candidate Entities
+
+#### CANDIDATE_1:
+- **Entity Type:** Pope
+- **Attributes:** 
+  - Term Start: c. 167, Term End: 174, Years: 167
+  - Name: Soter, Birth Name
+
+Final alignment response:
+[RANKING] = CANDIDATE_1 > CANDIDATE_2 > CANDIDATE_3 > CANDIDATE_4 > CANDIDATE_5 > CANDIDATE_6 > CANDIDATE_7 > CANDIDATE_8 > CANDIDATE_9 > CANDIDATE_10
+
+Discriminative reasoning reranking result
+ 1. CANDIDATE_1 | ID=35185 | ori=0.089 | unique_score=9  <-- ground truth
+ 2. CANDIDATE_2 | ID=20664 | ori=0.064 | unique_score=8
+ 3. CANDIDATE_3 | ID=37346 | ori=-0.045 | unique_score=7
+ 4. CANDIDATE_4 | ID=19558 | ori=-0.836 | unique_score=6
+ 5. CANDIDATE_5 | ID=16690 | ori=-0.967 | unique_score=5
+ 6. CANDIDATE_6 | ID=17067 | ori=-1.023 | unique_score=4
+ 7. CANDIDATE_7 | ID=38650 | ori=-1.166 | unique_score=3
+ 8. CANDIDATE_8 | ID=37828 | ori=-1.176 | unique_score=2
+ 9. CANDIDATE_9 | ID=34748 | ori=-1.273 | unique_score=1
+10. CANDIDATE_10 | ID=15953 | ori=-1.410 | unique_score=0
+
+Base rank: 0 (1th position)
+LLM rank: 0 (1th position)
+Rank improved: False
+Hits@1 correct: True
+Time cost: 173.74s
+
+================================================================================
+Discriminative Reasoning Reranking Summary
+Total entities: 2
+Hits@1 correct: 1/2
+Improved: 0/2
+Skipped: 0/2
+ID=24135 | base_rank=0 | llm_rank=1 | correct=False | skipped=False
+ID=25148 | base_rank=0 | llm_rank=0 | correct=True | skipped=False
+Descriptions saved to: ./data/DBP15K/zh_en/descriptions/TTR_descriptions_24135_25148.json
+Total time: 352.77s

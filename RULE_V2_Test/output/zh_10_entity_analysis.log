@@ -1,0 +1,302 @@
+Loading weights:   0%|          | 0/1353 [00:00<?, ?it/s]Loading weights:   0%|          | 1/1353 [00:11<4:18:54, 11.49s/it]Loading weights:   0%|          | 5/1353 [00:13<46:56,  2.09s/it]  Loading weights:   0%|          | 6/1353 [00:14<44:49,  2.00s/it]Loading weights:   1%|          | 14/1353 [00:15<12:22,  1.80it/s]Loading weights:   1%|▏         | 18/1353 [00:15<08:21,  2.66it/s]Loading weights:   2%|▏         | 28/1353 [00:15<03:51,  5.72it/s]Loading weights:   3%|▎         | 34/1353 [00:15<02:46,  7.90it/s]Loading weights:   3%|▎         | 41/1353 [00:15<01:57, 11.16it/s]Loading weights:   4%|▎         | 48/1353 [00:15<01:24, 15.43it/s]Loading weights:   4%|▍         | 54/1353 [00:15<01:11, 18.25it/s]Loading weights:   5%|▍         | 64/1353 [00:15<00:47, 27.34it/s]Loading weights:   5%|▌         | 71/1353 [00:16<00:41, 31.22it/s]Loading weights:   6%|▌         | 77/1353 [00:18<02:32,  8.39it/s]Loading weights:   6%|▌         | 84/1353 [00:18<01:50, 11.45it/s]Loading weights:   7%|▋         | 90/1353 [00:19<02:35,  8.14it/s]Loading weights:   7%|▋         | 100/1353 [00:19<01:40, 12.53it/s]Loading weights:   8%|▊         | 105/1353 [00:20<01:27, 14.22it/s]Loading weights:   8%|▊         | 112/1353 [00:20<01:08, 18.12it/s]Loading weights:   9%|▉         | 120/1353 [00:20<00:53, 23.01it/s]Loading weights:   9%|▉         | 126/1353 [00:20<00:45, 26.78it/s]Loading weights:  10%|█         | 136/1353 [00:20<00:33, 36.06it/s]Loading weights:  10%|█         | 142/1353 [00:20<00:33, 36.66it/s]Loading weights:  11%|█         | 149/1353 [00:20<00:30, 39.16it/s]Loading weights:  12%|█▏        | 156/1353 [00:20<00:26, 44.58it/s]Loading weights:  12%|█▏        | 162/1353 [00:22<01:17, 15.35it/s]Loading weights:  12%|█▏        | 168/1353 [00:22<01:02, 18.91it/s]Loading weights:  13%|█▎        | 173/1353 [00:22<00:59, 19.88it/s]Loading weights:  13%|█▎        | 177/1353 [00:22<00:53, 21.93it/s]Loading weights:  14%|█▎        | 185/1353 [00:22<00:41, 28.44it/s]Loading weights:  14%|█▍        | 190/1353 [00:22<00:40, 28.60it/s]Loading weights:  14%|█▍        | 194/1353 [00:22<00:40, 28.90it/s]Loading weights:  15%|█▍        | 198/1353 [00:23<00:46, 24.94it/s]Loading weights:  15%|█▌        | 208/1353 [00:23<00:30, 37.03it/s]Loading weights:  16%|█▌        | 213/1353 [00:23<00:42, 27.07it/s]Loading weights:  16%|█▋        | 220/1353 [00:23<00:35, 31.99it/s]Loading weights:  17%|█▋        | 232/1353 [00:23<00:25, 43.24it/s]Loading weights:  18%|█▊        | 238/1353 [00:24<00:32, 34.70it/s]Loading weights:  19%|█▉        | 255/1353 [00:24<00:19, 57.28it/s]Loading weights:  20%|█▉        | 264/1353 [00:24<00:21, 51.78it/s]Loading weights:  20%|██        | 271/1353 [00:24<00:26, 41.15it/s]Loading weights:  21%|██        | 278/1353 [00:25<00:26, 39.98it/s]Loading weights:  22%|██▏       | 292/1353 [00:25<00:18, 56.09it/s]Loading weights:  22%|██▏       | 300/1353 [00:25<00:19, 53.89it/s]Loading weights:  23%|██▎       | 307/1353 [00:25<00:21, 48.39it/s]Loading weights:  23%|██▎       | 316/1353 [00:25<00:18, 56.31it/s]Loading weights:  24%|██▍       | 323/1353 [00:25<00:24, 41.41it/s]Loading weights:  25%|██▍       | 335/1353 [00:26<00:22, 45.48it/s]Loading weights:  25%|██▌       | 341/1353 [00:26<00:28, 35.66it/s]Loading weights:  26%|██▌       | 346/1353 [00:26<00:45, 22.17it/s]Loading weights:  26%|██▌       | 350/1353 [00:27<01:09, 14.49it/s]Loading weights:  26%|██▌       | 353/1353 [00:31<04:58,  3.35it/s]Loading weights:  26%|██▌       | 355/1353 [00:34<06:45,  2.46it/s]Loading weights:  26%|██▋       | 358/1353 [00:34<05:59,  2.77it/s]Loading weights:  27%|██▋       | 360/1353 [00:35<05:49,  2.84it/s]Loading weights:  27%|██▋       | 363/1353 [00:37<07:42,  2.14it/s]Loading weights:  27%|██▋       | 365/1353 [00:39<09:47,  1.68it/s]Loading weights:  27%|██▋       | 366/1353 [00:42<13:22,  1.23it/s]Loading weights:  27%|██▋       | 370/1353 [00:42<08:52,  1.85it/s]Loading weights:  27%|██▋       | 372/1353 [00:43<08:00,  2.04it/s]Loading weights:  28%|██▊       | 376/1353 [00:45<08:30,  1.91it/s]Loading weights:  28%|██▊       | 377/1353 [00:47<11:44,  1.39it/s]Loading weights:  28%|██▊       | 378/1353 [00:49<15:03,  1.08it/s]Loading weights:  28%|██▊       | 382/1353 [00:50<09:14,  1.75it/s]Loading weights:  28%|██▊       | 383/1353 [00:51<09:24,  1.72it/s]Loading weights:  29%|██▊       | 388/1353 [00:53<08:06,  1.98it/s]Loading weights:  29%|██▉       | 389/1353 [00:55<11:30,  1.40it/s]Loading weights:  29%|██▉       | 390/1353 [00:57<15:03,  1.07it/s]Loading weights:  29%|██▉       | 393/1353 [00:57<09:23,  1.70it/s]Loading weights:  29%|██▉       | 394/1353 [00:58<09:20,  1.71it/s]Loading weights:  29%|██▉       | 396/1353 [00:59<07:57,  2.01it/s]Loading weights:  30%|██▉       | 400/1353 [00:59<04:26,  3.58it/s]Loading weights:  30%|██▉       | 402/1353 [01:03<11:55,  1.33it/s]Loading weights:  30%|███       | 406/1353 [01:04<08:02,  1.96it/s]Loading weights:  30%|███       | 412/1353 [01:04<04:21,  3.60it/s]Loading weights:  31%|███       | 415/1353 [01:04<03:24,  4.58it/s]Loading weights:  31%|███▏      | 423/1353 [01:04<01:52,  8.26it/s]Loading weights:  32%|███▏      | 431/1353 [01:04<01:10, 13.04it/s]Loading weights:  32%|███▏      | 437/1353 [01:04<00:54, 16.83it/s]Loading weights:  33%|███▎      | 444/1353 [01:04<00:40, 22.62it/s]Loading weights:  33%|███▎      | 450/1353 [01:05<00:36, 24.67it/s]Loading weights:  34%|███▍      | 460/1353 [01:05<00:25, 35.53it/s]Loading weights:  35%|███▍      | 467/1353 [01:05<00:23, 38.32it/s]Loading weights:  35%|███▍      | 473/1353 [01:05<00:22, 39.35it/s]Loading weights:  35%|███▌      | 480/1353 [01:05<00:19, 45.21it/s]Loading weights:  36%|███▌      | 486/1353 [01:05<00:20, 41.73it/s]Loading weights:  37%|███▋      | 496/1353 [01:05<00:15, 53.91it/s]Loading weights:  37%|███▋      | 503/1353 [01:06<00:16, 52.36it/s]Loading weights:  38%|███▊      | 510/1353 [01:06<00:18, 45.16it/s]Loading weights:  38%|███▊      | 518/1353 [01:06<00:18, 44.72it/s]Loading weights:  39%|███▉      | 530/1353 [01:06<00:18, 44.71it/s]Loading weights:  40%|████      | 544/1353 [01:06<00:13, 61.39it/s]Loading weights:  41%|████      | 552/1353 [01:06<00:13, 58.36it/s]Loading weights:  41%|████▏     | 559/1353 [01:07<00:15, 51.69it/s]Loading weights:  42%|████▏     | 569/1353 [01:07<00:14, 55.13it/s]Loading weights:  43%|████▎     | 576/1353 [01:07<00:13, 57.76it/s]Loading weights:  43%|████▎     | 583/1353 [01:07<00:15, 51.22it/s]Loading weights:  44%|████▍     | 593/1353 [01:07<00:13, 54.65it/s]Loading weights:  44%|████▍     | 600/1353 [01:07<00:13, 57.80it/s]Loading weights:  45%|████▍     | 607/1353 [01:08<00:14, 50.64it/s]Loading weights:  45%|████▌     | 614/1353 [01:08<00:15, 48.39it/s]Loading weights:  46%|████▌     | 625/1353 [01:08<00:15, 48.40it/s]Loading weights:  47%|████▋     | 636/1353 [01:08<00:11, 59.91it/s]Loading weights:  48%|████▊     | 643/1353 [01:08<00:13, 52.19it/s]Loading weights:  48%|████▊     | 649/1353 [01:08<00:16, 43.18it/s]Loading weights:  49%|████▉     | 664/1353 [01:09<00:12, 56.68it/s]Loading weights:  50%|████▉     | 674/1353 [01:09<00:10, 65.04it/s]Loading weights:  50%|█████     | 682/1353 [01:09<00:12, 53.67it/s]Loading weights:  51%|█████     | 689/1353 [01:09<00:12, 54.21it/s]Loading weights:  51%|█████▏    | 695/1353 [01:09<00:11, 55.40it/s]Loading weights:  52%|█████▏    | 701/1353 [01:09<00:12, 53.41it/s]Loading weights:  52%|█████▏    | 708/1353 [01:09<00:11, 57.26it/s]Loading weights:  53%|█████▎    | 715/1353 [01:10<00:12, 49.38it/s]Loading weights:  53%|█████▎    | 721/1353 [01:10<00:16, 38.73it/s]Loading weights:  54%|█████▍    | 737/1353 [01:10<00:10, 57.62it/s]Loading weights:  55%|█████▌    | 748/1353 [01:10<00:09, 60.77it/s]Loading weights:  56%|█████▌    | 755/1353 [01:10<00:10, 55.72it/s]Loading weights:  56%|█████▌    | 761/1353 [01:10<00:11, 53.70it/s]Loading weights:  57%|█████▋    | 767/1353 [01:11<00:13, 43.32it/s]Loading weights:  58%|█████▊    | 780/1353 [01:11<00:09, 59.63it/s]Loading weights:  58%|█████▊    | 787/1353 [01:11<00:10, 52.23it/s]Loading weights:  59%|█████▊    | 794/1353 [01:11<00:10, 55.42it/s]Loading weights:  59%|█████▉    | 801/1353 [01:11<00:10, 53.38it/s]Loading weights:  60%|█████▉    | 807/1353 [01:11<00:10, 49.95it/s]Loading weights:  60%|██████    | 815/1353 [01:11<00:09, 56.70it/s]Loading weights:  61%|██████    | 822/1353 [01:12<00:10, 49.34it/s]Loading weights:  61%|██████▏   | 830/1353 [01:12<00:11, 43.81it/s]Loading weights:  62%|██████▏   | 842/1353 [01:12<00:11, 46.19it/s]Loading weights:  63%|██████▎   | 856/1353 [01:12<00:09, 52.78it/s]Loading weights:  64%|██████▍   | 866/1353 [01:12<00:09, 49.24it/s]Loading weights:  65%|██████▌   | 881/1353 [01:13<00:07, 62.08it/s]Loading weights:  66%|██████▌   | 889/1353 [01:13<00:07, 65.36it/s]Loading weights:  66%|██████▋   | 897/1353 [01:13<00:07, 58.43it/s]Loading weights:  67%|██████▋   | 904/1353 [01:13<00:07, 60.75it/s]Loading weights:  67%|██████▋   | 911/1353 [01:13<00:10, 40.82it/s]Loading weights:  69%|██████▊   | 928/1353 [01:14<00:08, 52.13it/s]Loading weights:  69%|██████▉   | 938/1353 [01:14<00:06, 59.91it/s]Loading weights:  70%|██████▉   | 946/1353 [01:14<00:06, 58.73it/s]Loading weights:  70%|███████   | 953/1353 [01:14<00:07, 56.43it/s]Loading weights:  71%|███████   | 962/1353 [01:14<00:06, 63.07it/s]Loading weights:  88%|████████▊ | 1185/1353 [01:14<00:00, 562.37it/s]Loading weights: 100%|██████████| 1353/1353 [01:14<00:00, 18.10it/s] 
+
+================================================================================
+Query ID: 4504
+Query name: 越南盾
+Reference ID: 15004
+Base rank: 2 (3th position)
+Candidates: [34617, 38944, 15004, 35327, 18105, 17503, 38785, 20316, 37402, 16750]
+
+Reranking result
+ 1. ID=34617 | ori=0.130 | image=0 | final=0.161245
+ 2. ID=38944 | ori=0.006 | image=0 | final=0.037245
+ 3. ID=15004 | ori=-0.038 | image=0 | final=-0.006755  <-- ground truth
+ 4. ID=35327 | ori=-0.379 | image=0 | final=-0.347755
+ 5. ID=18105 | ori=-0.395 | image=0 | final=-0.363755
+ 6. ID=17503 | ori=-0.587 | image=0 | final=-0.555755
+ 7. ID=38785 | ori=-0.751 | image=0 | final=-0.719755
+ 8. ID=20316 | ori=-0.927 | image=0 | final=-0.895755
+ 9. ID=37402 | ori=-0.947 | image=0 | final=-0.915755
+10. ID=16750 | ori=-0.963 | image=0 | final=-0.931755
+
+Base rank: 2 (3th position)
+LLM rank: 2 (3th position)
+Rank improved: False
+Hits@1 correct: False
+Time cost: 0.00s
+
+================================================================================
+Query ID: 4515
+Query name: 维克托三世
+Reference ID: 15015
+Base rank: 2 (3th position)
+Candidates: [16994, 38100, 15015, 35426, 35650, 19748, 17341, 20282, 15704, 38650]
+
+Image response for 16994:
+[IMAGE SIMILARITY] = 9 out of 10.
+
+Image response for 38100:
+[IMAGE SIMILARITY] = 9 out of 10.
+
+Image response for 15015:
+[IMAGE SIMILARITY] = 7 out of 10.
+
+Image response for 35426:
+[IMAGE SIMILARITY] = 7 out of 10.
+
+Image response for 35650:
+[IMAGE SIMILARITY] = 0 out of 10.
+
+Image response for 19748:
+[IMAGE SIMILARITY] = 0 out of 10.
+
+Image response for 17341:
+[IMAGE SIMILARITY] = 3 out of 10.
+
+Image response for 20282:
+[IMAGE SIMILARITY] = 0 out of 10.
+
+Image response for 15704:
+[IMAGE SIMILARITY] = 8 out of 10.
+
+Image response for 38650:
+[IMAGE SIMILARITY] = 0 out of 10.
+
+Reranking result
+ 1. ID=16994 | ori=0.164 | image=9 | final=0.234343
+ 2. ID=38100 | ori=-0.001 | image=9 | final=0.069343
+ 3. ID=15015 | ori=-0.128 | image=7 | final=-0.080848  <-- ground truth
+ 4. ID=35426 | ori=-0.321 | image=7 | final=-0.273848
+ 5. ID=35650 | ori=-0.397 | image=0 | final=-0.385372
+ 6. ID=19748 | ori=-0.399 | image=0 | final=-0.387372
+ 7. ID=17341 | ori=-0.431 | image=3 | final=-0.409813
+ 8. ID=15704 | ori=-0.526 | image=8 | final=-0.468408
+ 9. ID=20282 | ori=-0.509 | image=0 | final=-0.497372
+10. ID=38650 | ori=-0.563 | image=0 | final=-0.551372
+
+Base rank: 2 (3th position)
+LLM rank: 2 (3th position)
+Rank improved: False
+Hits@1 correct: False
+Time cost: 11.51s
+
+================================================================================
+Query ID: 4525
+Query name: 利雅得省
+Reference ID: 15025
+Base rank: 2 (3th position)
+Candidates: [15282, 18504, 15025, 38361, 19456, 17000, 20523, 37467, 38471, 20817]
+TTR is skipped by the confidence rule.
+Final rank: 2 (3th position)
+Hits@1 correct: False
+
+================================================================================
+Query ID: 4542
+Query name: 中华人民共和国最高人民检察院
+Reference ID: 15042
+Base rank: 8 (9th position)
+Candidates: [38922, 38296, 36423, 17168, 19279, 17304, 18634, 15037, 15042, 20074]
+
+Image response for 38922:
+[IMAGE SIMILARITY] = 0 out of 10.
+
+Image response for 38296:
+[IMAGE SIMILARITY] = 0 out of 10.
+
+Image response for 36423:
+[IMAGE SIMILARITY] = 0 out of 10.
+
+Image response for 17168:
+[IMAGE SIMILARITY] = 0 out of 10.
+
+Image response for 19279:
+[IMAGE SIMILARITY] = 0 out of 10.
+
+Image response for 17304:
+[IMAGE SIMILARITY] = 0 out of 10.
+
+Image response for 18634:
+[IMAGE SIMILARITY] = 0 out of 10.
+
+Image response for 15037:
+[IMAGE SIMILARITY] = 0 out of 10.
+
+Image response for 15042:
+[IMAGE SIMILARITY] = 0 out of 10.
+
+Image response for 20074:
+[IMAGE SIMILARITY] = 0 out of 10.
+
+Reranking result
+ 1. ID=38922 | ori=0.121 | image=0 | final=0.152245
+ 2. ID=38296 | ori=0.077 | image=0 | final=0.108245
+ 3. ID=36423 | ori=-0.009 | image=0 | final=0.022245
+ 4. ID=17168 | ori=-0.097 | image=0 | final=-0.065755
+ 5. ID=19279 | ori=-0.099 | image=0 | final=-0.067755
+ 6. ID=17304 | ori=-0.161 | image=0 | final=-0.129755
+ 7. ID=18634 | ori=-0.169 | image=0 | final=-0.137755
+ 8. ID=15037 | ori=-0.290 | image=0 | final=-0.258755
+ 9. ID=15042 | ori=-0.484 | image=0 | final=-0.452755  <-- ground truth
+10. ID=20074 | ori=-0.543 | image=0 | final=-0.511755
+
+Base rank: 8 (9th position)
+LLM rank: 8 (9th position)
+Rank improved: False
+Hits@1 correct: False
+Time cost: 10.91s
+
+================================================================================
+Query ID: 4574
+Query name: A_(濱崎步單曲)
+Reference ID: 15074
+Base rank: 1 (2th position)
+Candidates: [18430, 15074, 16258, 18025, 19560, 38788, 16157, 17597, 37193, 17546]
+
+Image response for 18430:
+[IMAGE SIMILARITY] = 10 out of 10.
+
+Reranking result
+ 1. ID=18430 | ori=0.002 | image=10 | final=0.222180
+ 2. ID=15074 | ori=-0.017 | image=0 | final=0.012798  <-- ground truth
+ 3. ID=16258 | ori=-0.254 | image=0 | final=-0.224202
+ 4. ID=18025 | ori=-0.277 | image=0 | final=-0.247202
+ 5. ID=19560 | ori=-0.299 | image=0 | final=-0.269202
+ 6. ID=38788 | ori=-0.367 | image=0 | final=-0.337202
+ 7. ID=16157 | ori=-0.497 | image=0 | final=-0.467202
+ 8. ID=17597 | ori=-0.510 | image=0 | final=-0.480202
+ 9. ID=37193 | ori=-0.522 | image=0 | final=-0.492202
+10. ID=17546 | ori=-0.550 | image=0 | final=-0.520202
+
+Base rank: 1 (2th position)
+LLM rank: 1 (2th position)
+Rank improved: False
+Hits@1 correct: False
+Time cost: 4.72s
+
+================================================================================
+Query ID: 4575
+Query name: 基里爾·納巴布金
+Reference ID: 15075
+Base rank: 1 (2th position)
+Candidates: [18529, 15075, 35449, 19774, 19104, 15928, 16976, 36927, 19992, 19188]
+TTR is skipped by the confidence rule.
+Final rank: 1 (2th position)
+Hits@1 correct: False
+
+================================================================================
+Query ID: 4580
+Query name: 港北區_(日本)
+Reference ID: 15080
+Base rank: 7 (8th position)
+Candidates: [37729, 19858, 37723, 37473, 16855, 15972, 36135, 15080, 37730, 16549]
+
+Image response for 37729:
+[IMAGE SIMILARITY] = 0 out of 10.
+
+Image response for 19858:
+[IMAGE SIMILARITY] = 0 out of 10.
+
+Image response for 37723:
+[IMAGE SIMILARITY] = 0 out of 10.
+
+Image response for 37473:
+[IMAGE SIMILARITY] = 0 out of 10.
+
+Image response for 16855:
+[IMAGE SIMILARITY] = 0 out of 10.
+
+Image response for 15972:
+[IMAGE SIMILARITY] = 0 out of 10.
+
+Image response for 36135:
+[IMAGE SIMILARITY] = 0 out of 10.
+
+Image response for 15080:
+[IMAGE SIMILARITY] = 9 out of 10.
+
+Image response for 37730:
+[IMAGE SIMILARITY] = 0 out of 10.
+
+Image response for 16549:
+[IMAGE SIMILARITY] = 0 out of 10.
+
+Reranking result
+ 1. ID=37729 | ori=-0.055 | image=0 | final=-0.024181
+ 2. ID=19858 | ori=-0.147 | image=0 | final=-0.116181
+ 3. ID=37723 | ori=-0.150 | image=0 | final=-0.119181
+ 4. ID=37473 | ori=-0.153 | image=0 | final=-0.122181
+ 5. ID=15080 | ori=-0.309 | image=9 | final=-0.122553  <-- ground truth
+ 6. ID=16855 | ori=-0.213 | image=0 | final=-0.182181
+ 7. ID=15972 | ori=-0.217 | image=0 | final=-0.186181
+ 8. ID=36135 | ori=-0.235 | image=0 | final=-0.204181
+ 9. ID=37730 | ori=-0.353 | image=0 | final=-0.322181
+10. ID=16549 | ori=-0.388 | image=0 | final=-0.357181
+
+Base rank: 7 (8th position)
+LLM rank: 4 (5th position)
+Rank improved: True
+Hits@1 correct: False
+Time cost: 10.92s
+
+================================================================================
+Query ID: 4584
+Query name: Rolling_star
+Reference ID: 15084
+Base rank: 2 (3th position)
+Candidates: [37068, 20591, 15084, 20202, 36066, 19509, 38932, 19343, 36020, 15034]
+
+Reranking result
+ 1. ID=37068 | ori=-0.040 | image=0 | final=-0.008755
+ 2. ID=20591 | ori=-0.066 | image=0 | final=-0.034755
+ 3. ID=15084 | ori=-0.112 | image=0 | final=-0.080755  <-- ground truth
+ 4. ID=20202 | ori=-0.117 | image=0 | final=-0.085755
+ 5. ID=36066 | ori=-0.119 | image=0 | final=-0.087755
+ 6. ID=19509 | ori=-0.143 | image=0 | final=-0.111755
+ 7. ID=38932 | ori=-0.216 | image=0 | final=-0.184755
+ 8. ID=19343 | ori=-0.220 | image=0 | final=-0.188755
+ 9. ID=36020 | ori=-0.500 | image=0 | final=-0.468755
+10. ID=15034 | ori=-0.503 | image=0 | final=-0.471755
+
+Base rank: 2 (3th position)
+LLM rank: 2 (3th position)
+Rank improved: False
+Hits@1 correct: False
+Time cost: 0.00s
+
+================================================================================
+Query ID: 4588
+Query name: 聯合書院
+Reference ID: 15088
+Base rank: 1 (2th position)
+Candidates: [36329, 15088, 20960, 17628, 38503, 35942, 18231, 20545, 20023, 16720]
+TTR is skipped by the confidence rule.
+Final rank: 1 (2th position)
+Hits@1 correct: False
+
+================================================================================
+Query ID: 4598
+Query name: 摩揭陀語
+Reference ID: 15098
+Base rank: 1 (2th position)
+Candidates: [18670, 15098, 20734, 38395, 36044, 20685, 37700, 19971, 15493, 37397]
+TTR is skipped by the confidence rule.
+Final rank: 1 (2th position)
+Hits@1 correct: False
+
+================================================================================
+Summary
+Total entities: 10
+Hits@1 correct: 0/10
+Improved: 1/10
+Skipped: 4/10
+ID=4504 | base_rank=2 | llm_rank=2 | correct=False | skipped=False
+ID=4515 | base_rank=2 | llm_rank=2 | correct=False | skipped=False
+ID=4525 | base_rank=2 | llm_rank=2 | correct=False | skipped=True
+ID=4542 | base_rank=8 | llm_rank=8 | correct=False | skipped=False
+ID=4574 | base_rank=1 | llm_rank=1 | correct=False | skipped=False
+ID=4575 | base_rank=1 | llm_rank=1 | correct=False | skipped=True
+ID=4580 | base_rank=7 | llm_rank=4 | correct=False | skipped=False
+ID=4584 | base_rank=2 | llm_rank=2 | correct=False | skipped=False
+ID=4588 | base_rank=1 | llm_rank=1 | correct=False | skipped=True
+ID=4598 | base_rank=1 | llm_rank=1 | correct=False | skipped=True
+Total time: 38.07s
