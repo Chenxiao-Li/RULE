@@ -21,7 +21,7 @@ parser = argparse.ArgumentParser(description="Test entity-aware local segmentati
 parser.add_argument("--data_split", default="zh_en", type=str, choices=["zh_en", "ja_en", "fr_en"])
 parser.add_argument("--entity_id", default=0, type=int)
 parser.add_argument("--sam3_path", default="/mnt/DATA/chenxiaoli/MLLM/SAM3", type=str)
-parser.add_argument("--output_dir", default="./output/local_segmentation_dbp", type=str)
+parser.add_argument("--output_dir", default="./output/local_segmentation_dbp_test", type=str)
 parser.add_argument("--sam_threshold", default=0.5, type=float)
 parser.add_argument("--mask_threshold", default=0.5, type=float)
 args = parser.parse_args()
