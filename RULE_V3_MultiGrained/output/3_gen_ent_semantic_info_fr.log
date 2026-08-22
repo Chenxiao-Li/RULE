@@ -1,0 +1,6 @@
+Dataset: fr_en
+Total entities: 39654
+Total attributes: 1093506
+Total attribute values: 1092338
+Total 1-hop relations: 39654
+Saved to: /home/UNT/cl1179/code/RULE/data/DBP15K/fr_en/ent_semantic_info.json

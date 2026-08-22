@@ -1,0 +1,6 @@
+Dataset: zh_en
+Total entities: 38960
+Total attributes: 935021
+Total attribute values: 933252
+Total 1-hop relations: 38960
+Saved to: /home/UNT/cl1179/code/RULE/data/DBP15K/zh_en/ent_semantic_info.json
