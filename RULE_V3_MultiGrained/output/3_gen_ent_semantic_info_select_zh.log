@@ -1,0 +1,6 @@
+Dataset: zh_en
+Total entities: 38960
+Selected attributes: 147185
+Selected 1-hop relations: 38960
+Top-k attributes per entity: 5
+Saved to: ./data/DBP15K/zh_en/ent_semantic_info_select.json

@@ -1,0 +1,6 @@
+Dataset: ja_en
+Total entities: 39594
+Selected attributes: 146490
+Selected 1-hop relations: 39594
+Top-k attributes per entity: 5
+Saved to: ./data/DBP15K/ja_en/ent_semantic_info_select.json
