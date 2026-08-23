@@ -21,15 +21,18 @@ parser = argparse.ArgumentParser(description="Test entity-aware local segmentati
 parser.add_argument("--data_split", default="zh_en", type=str, choices=["zh_en", "ja_en", "fr_en"])
 parser.add_argument("--entity_id", default=0, type=int)
 parser.add_argument("--sam3_path", default="/mnt/DATA/chenxiaoli/MLLM/SAM3", type=str)
-parser.add_argument("--output_dir", default="./output/local_segmentation_dbp_test", type=str)
+parser.add_argument("--output_dir", default="./output/all_local_seg_dbp_test/local_segmentation_dbp_test", type=str)
 parser.add_argument("--sam_threshold", default=0.5, type=float)
 parser.add_argument("--mask_threshold", default=0.5, type=float)
+parser.add_argument("--use_name", action="store_true", default=False)
+parser.add_argument("--semantic_info_name", default="ent_semantic_info.json", type=str)
 args = parser.parse_args()
 
 
 # ==================== Derived Settings ====================
 data_file_path = os.path.join("./data", "DBP15K", args.data_split)
 name_dict_path = os.path.join(data_file_path, "candidates", "name_dict")
+semantic_info_path = os.path.join(data_file_path, args.semantic_info_name)
 # 修改：根据实体 ID 自动匹配 jpg/jpeg/png/gif 格式，扩展名大小写均可
 def find_entity_image():
     image_dir = os.path.join(data_file_path, "concat_images")
@@ -55,31 +58,61 @@ def load_entity_name():
     return name_dict[str(args.entity_id)]
 
 
+def load_entity_semantic_info():
+    # 修改：读取属性、属性值和 1-hop 关系
+    with open(semantic_info_path, "r", encoding="utf-8") as f:
+        semantic_info = json.load(f)
+    return semantic_info.get(str(args.entity_id), {"attributes": [], "relations": []})
+
+
 # ==================== Qwen2.5-VL Reasoning ====================
-def build_reasoning_prompt(entity_name):
-    # 新增：先仅使用实体名字 + 图片，让 Qwen 判断图片如何表示实体，并生成适合 SAM3 的短概念
-    return (
-        f"The entity name is: {entity_name}.\n"
-        "Inspect the provided image and determine how the image visually represents this entity.\n"
-        "Choose exactly one representation type:\n"
-        "- direct: the image directly depicts the entity itself.\n"
-        "- contextual: the image does not directly depict the entity itself, but depicts a visual object or scene strongly associated with it.\n"
-        "- irrelevant: the image does not provide meaningful visual evidence for the entity.\n"
+def build_reasoning_prompt(entity_name, semantic_info):
+    # 修改：加入名称（可关闭）、属性/属性值和 1-hop 关系
+    prompt = ""
+    if args.use_name:
+        prompt += f"The entity name is: {entity_name}.\\n"
+
+    prompt += "Entity attributes:\\n"
+    attributes = semantic_info.get("attributes", [])
+    if attributes:
+        for item in attributes:
+            attribute, value = item.get("attribute", ""), item.get("value", "")
+            prompt += f"- {attribute}: {value}\\n" if value else f"- {attribute}\\n"
+    else:
+        prompt += "- none\\n"
+
+    prompt += "Entity relations:\\n"
+    relations = semantic_info.get("relations", [])
+    if relations:
+        for item in relations:
+            direction, relation, neighbor = item.get("direction", ""), item.get("relation", ""), item.get("neighbor", "")
+            if direction == "outgoing":
+                prompt += f"- this entity --{relation}--> {neighbor}\\n"
+            elif direction == "incoming":
+                prompt += f"- {neighbor} --{relation}--> this entity\\n"
+            else:
+                prompt += f"- {relation}: {neighbor}\\n"
+    else:
+        prompt += "- none\\n"
+
+    prompt += (
+        "Inspect the provided image and determine how the image visually represents this entity.\\n"
+        "Choose exactly one representation type:\\n"
+        "- direct: the image directly depicts the entity itself.\\n"
+        "- contextual: the image does not directly depict the entity itself, but depicts a visual object or scene strongly associated with it.\\n"
+        "- irrelevant: the image does not provide meaningful visual evidence for the entity.\\n"
         "Then give one short visual target concept suitable for text-prompted segmentation. "
-        # 修改：Target Concept 必须是适合 SAM3 的英文视觉概念，不直接输出实体专名
         "The target concept must be a concise English visual noun phrase describing the visible object or region "
-        "that best represents or is visually associated with the entity in the image, such as person, man, woman, "
-        "man in a suit, flag, building, logo, map, car, or airplane. "
+        "that best represents or is visually associated with the entity in the image. "
         "Do not simply copy or translate the entity name as the target concept. "
-        # 修改：即使是 contextual 或 irrelevant，也仍然要求输出 Target Concept，便于后续分析
-        "Always output a target concept, regardless of whether the representation type is direct, contextual, or irrelevant.\n"
-        "Output strictly in the following format:\n"
-        "[REPRESENTATION TYPE] = direct/contextual/irrelevant\n"
+        "Always output a target concept, regardless of whether the representation type is direct, contextual, or irrelevant.\\n"
+        "Output strictly in the following format:\\n"
+        "[REPRESENTATION TYPE] = direct/contextual/irrelevant\\n"
         "[TARGET CONCEPT] = concise English visual noun phrase"
     )
+    return prompt
 
-
-def qwen_reason(entity_name, image):
+def qwen_reason(entity_name, semantic_info, image):
     # 新增：调用方式保持与 TTR_DBP.py 一致
     model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
         MLLM_PATH, torch_dtype=torch.bfloat16, attn_implementation="eager", device_map="auto"
@@ -90,7 +123,7 @@ def qwen_reason(entity_name, image):
         {"role": "system", "content": SYSTEM_PROMPT},
         {"role": "user", "content": [
             {"type": "image", "image": image},
-            {"type": "text", "text": build_reasoning_prompt(entity_name)},
+            {"type": "text", "text": build_reasoning_prompt(entity_name, semantic_info)},
         ]},
     ]
 
@@ -123,6 +156,61 @@ def parse_qwen_response(response):
     target_concept = target_concept.splitlines()[0].strip().strip(".")
 
     return representation_type, target_concept
+
+
+def confirm_non_direct(entity_name, semantic_info, image, failed_target_concept):
+    # 修改：direct 但 SAM3 无 mask 时，仅在 contextual / irrelevant 中再次确认
+    model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
+        MLLM_PATH, torch_dtype=torch.bfloat16, attn_implementation="eager", device_map="auto"
+    )
+    processor = AutoProcessor.from_pretrained(MLLM_PATH)
+
+    prompt = ""
+    if args.use_name:
+        prompt += f"The entity name is: {entity_name}.\\n"
+
+    prompt += "Entity attributes:\\n"
+    for item in semantic_info.get("attributes", []):
+        attribute, value = item.get("attribute", ""), item.get("value", "")
+        prompt += f"- {attribute}: {value}\\n" if value else f"- {attribute}\\n"
+
+    prompt += "Entity relations:\\n"
+    for item in semantic_info.get("relations", []):
+        direction, relation, neighbor = item.get("direction", ""), item.get("relation", ""), item.get("neighbor", "")
+        if direction == "outgoing":
+            prompt += f"- this entity --{relation}--> {neighbor}\\n"
+        elif direction == "incoming":
+            prompt += f"- {neighbor} --{relation}--> this entity\\n"
+
+    prompt += (
+        f"The image was previously classified as direct with target concept '{failed_target_concept}', "
+        "but SAM3 could not obtain any valid segmentation mask. "
+        "Reconsider the image and choose exactly one:\\n"
+        "- contextual: the image does not directly depict the entity itself, but depicts a visual object or scene strongly associated with it.\\n"
+        "- irrelevant: the image does not provide meaningful visual evidence for the entity.\\n"
+        "Output strictly in the following format:\\n"
+        "[REPRESENTATION TYPE] = contextual/irrelevant"
+    )
+
+    messages = [
+        {"role": "system", "content": SYSTEM_PROMPT},
+        {"role": "user", "content": [{"type": "image", "image": image}, {"type": "text", "text": prompt}]},
+    ]
+    text = processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+    image_inputs, video_inputs = process_vision_info(messages)
+    inputs = processor(text=[text], images=image_inputs, videos=video_inputs, padding=True, return_tensors="pt").to("cuda")
+
+    with torch.no_grad():
+        generated_ids = model.generate(**inputs, max_new_tokens=64)
+    generated_ids = generated_ids[:, inputs.input_ids.shape[1]:]
+    response = processor.batch_decode(generated_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
+    type_match = re.search(r"\\[REPRESENTATION TYPE\\]\\s*=\\s*(contextual|irrelevant)", response, re.I)
+    confirmed_type = type_match.group(1).lower() if type_match else "unknown"
+
+    del inputs, generated_ids, model, processor
+    gc.collect()
+    torch.cuda.empty_cache()
+    return confirmed_type, response
 
 
 # ==================== SAM3 Segmentation ====================
@@ -161,7 +249,7 @@ def save_segmentation_results(image, results, target_concept):
 
     if len(masks) == 0:
         print("SAM3 found no mask.")
-        return
+        return False
 
     best_idx = int(torch.argmax(scores).item())
     best_mask = masks[best_idx].numpy().astype(bool)
@@ -205,23 +293,29 @@ def save_segmentation_results(image, results, target_concept):
     print(f"Best mask score: {float(scores[best_idx]):.4f}")
     print(f"Target concept: {target_concept}")
     print(f"Results saved to: {output_dir}")
+    return True
 
 
 # ==================== Entry Point ====================
 if __name__ == "__main__":
     if not os.path.exists(image_path):
         raise FileNotFoundError(f"Image not found: {image_path}")
-    if not os.path.exists(name_dict_path):
+    if args.use_name and not os.path.exists(name_dict_path):
         raise FileNotFoundError(f"Name dict not found: {name_dict_path}")
+    if not os.path.exists(semantic_info_path):
+        raise FileNotFoundError(f"Semantic info not found: {semantic_info_path}")
 
-    entity_name = load_entity_name()
+    entity_name = load_entity_name() if args.use_name else ""
+    semantic_info = load_entity_semantic_info()
     image = Image.open(image_path).convert("RGB")
 
     print(f"Entity ID: {args.entity_id}")
-    print(f"Entity Name: {entity_name}")
+    print(f"Entity Name: {entity_name if args.use_name else '[disabled]'}")
+    print(f"Attributes: {len(semantic_info.get('attributes', []))}")
+    print(f"Relations: {len(semantic_info.get('relations', []))}")
     print(f"Image: {image_path}")
 
-    response = qwen_reason(entity_name, image)
+    response = qwen_reason(entity_name, semantic_info, image)
     print("\n===== Qwen2.5-VL Response =====")
     print(response)
 
@@ -229,9 +323,19 @@ if __name__ == "__main__":
     print(f"\nRepresentation Type: {representation_type}")
     print(f"Target Concept: {target_concept}")
 
-    # 修改：只有 direct 类型进入 SAM3；contextual 和 irrelevant 均只保留 Qwen 的 Target Concept
+    # 修改：direct 才进入 SAM3；若 SAM3 无 mask，则再次确认 contextual / irrelevant
     if representation_type != "direct" or not target_concept:
         print("Skip SAM3 because only direct representations are segmented, or no valid target concept was generated.")
+        final_representation_type = representation_type
     else:
         results = run_sam3(image, target_concept)
-        save_segmentation_results(image, results, target_concept)
+        sam_success = save_segmentation_results(image, results, target_concept)
+        if sam_success:
+            final_representation_type = "direct"
+        else:
+            confirmed_type, confirm_response = confirm_non_direct(entity_name, semantic_info, image, target_concept)
+            print("\\n===== Qwen2.5-VL Reconfirmation =====")
+            print(confirm_response)
+            final_representation_type = confirmed_type
+
+    print(f"\\nFinal Representation Type: {final_representation_type}")
