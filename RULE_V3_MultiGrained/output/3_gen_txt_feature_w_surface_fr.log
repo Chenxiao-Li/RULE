@@ -1,3 +1,5 @@
+Char vocabulary size: 1669
+Char entities: 39654
 Processed 100 new entities. Saved 100/39654.
 Processed 200 new entities. Saved 200/39654.
 Processed 300 new entities. Saved 300/39654.
@@ -395,5 +397,8 @@ Processed 39400 new entities. Saved 39400/39654.
 Processed 39500 new entities. Saved 39500/39654.
 Processed 39600 new entities. Saved 39600/39654.
 Complete. Newly processed: 39654. Total saved: 39654.
-Use name: False
-Saved to: ./data/pkls/DBP15K/fr_en/txt_feature_without_name.pkl
+Use surface: True
+CLIP text dim: 768
+Char dim: 1669
+Final with-surface dim: 2437
+Saved to: ./data/pkls/DBP15K/fr_en/txt_feature_with_surface.pkl

@@ -394,5 +394,6 @@ Processed 39300 new entities. Saved 39300/39594.
 Processed 39400 new entities. Saved 39400/39594.
 Processed 39500 new entities. Saved 39500/39594.
 Complete. Newly processed: 39594. Total saved: 39594.
-Use name: False
-Saved to: ./data/pkls/DBP15K/ja_en/txt_feature_without_name.pkl
+Use surface: False
+Final without-surface dim: 768
+Saved to: ./data/pkls/DBP15K/ja_en/txt_feature_without_surface.pkl

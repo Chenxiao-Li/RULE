@@ -1,0 +1,37 @@
+Device: cuda:0
+Dataset: zh_en
+Use text: True
+Use global image: True
+Use structure: True
+Use surface: False
+CSLS: True
+CSLS k: 3
+CSLS m: 2
+Test pairs (ref_pairs): 10500
+Valid test pairs: 10500
+Skipped pairs due to missing text: 0
+Text feature dim: 768
+KG1 entities missing global image: 2171
+KG2 entities missing global image: 3208
+Global image feature dim: 768
+Skipped pairs due to missing structure: 0
+Structure feature dim: 300
+Joint feature dim: 1836
+
+KG1 -> KG2
+Hits@1: 0.642286
+Hits@5: 0.823619
+Hits@10: 0.868381
+MRR: 0.722419
+
+KG2 -> KG1
+Hits@1: 0.647810
+Hits@5: 0.828000
+Hits@10: 0.873619
+MRR: 0.727689
+
+Average
+Hits@1: 0.645048
+Hits@5: 0.825810
+Hits@10: 0.871000
+MRR: 0.725054

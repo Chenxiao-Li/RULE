@@ -1,0 +1,51 @@
+Device: cuda:0
+Dataset: fr_en
+Entities: 39654
+Triples KG1: 105998
+Triples KG2: 115722
+Training pairs: 4500
+Hidden units: 300,300,300
+Heads: 2,2
+Epoch 01/40 | structure loss: 0.862945
+Epoch 02/40 | structure loss: 0.517082
+Epoch 03/40 | structure loss: 0.313664
+Epoch 04/40 | structure loss: 0.206369
+Epoch 05/40 | structure loss: 0.151722
+Epoch 06/40 | structure loss: 0.124284
+Epoch 07/40 | structure loss: 0.110077
+Epoch 08/40 | structure loss: 0.093294
+Epoch 09/40 | structure loss: 0.084133
+Epoch 10/40 | structure loss: 0.076324
+Epoch 11/40 | structure loss: 0.070893
+Epoch 12/40 | structure loss: 0.067090
+Epoch 13/40 | structure loss: 0.061822
+Epoch 14/40 | structure loss: 0.057741
+Epoch 15/40 | structure loss: 0.055557
+Epoch 16/40 | structure loss: 0.049909
+Epoch 17/40 | structure loss: 0.050462
+Epoch 18/40 | structure loss: 0.051690
+Epoch 19/40 | structure loss: 0.050044
+Epoch 20/40 | structure loss: 0.046688
+Epoch 21/40 | structure loss: 0.045524
+Epoch 22/40 | structure loss: 0.044290
+Epoch 23/40 | structure loss: 0.041343
+Epoch 24/40 | structure loss: 0.041472
+Epoch 25/40 | structure loss: 0.039095
+Epoch 26/40 | structure loss: 0.041287
+Epoch 27/40 | structure loss: 0.039925
+Epoch 28/40 | structure loss: 0.039727
+Epoch 29/40 | structure loss: 0.035188
+Epoch 30/40 | structure loss: 0.036580
+Epoch 31/40 | structure loss: 0.032695
+Epoch 32/40 | structure loss: 0.033070
+Epoch 33/40 | structure loss: 0.032075
+Epoch 34/40 | structure loss: 0.031332
+Epoch 35/40 | structure loss: 0.031175
+Epoch 36/40 | structure loss: 0.030139
+Epoch 37/40 | structure loss: 0.025925
+Epoch 38/40 | structure loss: 0.030402
+Epoch 39/40 | structure loss: 0.028306
+Epoch 40/40 | structure loss: 0.026601
+Saved entities: 39654
+Feature dim: 300
+Saved to: /home/UNT/cl1179/code/RULE/data/pkls/DBP15K/fr_en/structure_feature.pkl
