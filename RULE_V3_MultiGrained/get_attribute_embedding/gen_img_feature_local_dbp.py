@@ -27,7 +27,7 @@ def main(args):
     data_dir = os.path.join(args.data_dir, args.data_split)
     run_name = "with_name" if args.use_name else "without_name"
     img_folder = os.path.join(data_dir, "seg_images", run_name)
-    output_dir = os.path.join("./data/pkls/DBP15k", args.data_split)
+    output_dir = os.path.join("./data/pkls/DBP15K", args.data_split)
     os.makedirs(output_dir, exist_ok=True)
     output_name = "img_feature_local_with_name.pkl" if args.use_name else "img_feature_local_without_name.pkl"
     output_path = os.path.join(output_dir, output_name)

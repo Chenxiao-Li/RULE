@@ -48,10 +48,10 @@ def normalize_vector(x, eps=1e-12):
     return x / norm
 
 
-def get_required_feature(entity_id, feature_dict, dim, modality_name):
-    """读取必须存在的模态，并检查维度。"""
+def get_feature_or_zero(entity_id, feature_dict, dim, modality_name):
+    """读取模态特征；缺失时返回同维度 0 向量。"""
     if entity_id not in feature_dict:
-        raise KeyError(f"Missing {modality_name} feature for Entity ID {entity_id}")
+        return np.zeros(dim, dtype=np.float32)
     feature = np.asarray(feature_dict[entity_id], dtype=np.float32).reshape(-1)
     if feature.shape[0] != dim:
         raise ValueError(f"Unexpected {modality_name} feature dim for Entity ID {entity_id}: {feature.shape[0]} != {dim}")
@@ -68,64 +68,51 @@ def get_optional_feature(entity_id, feature_dict, dim, modality_name):
     return normalize_vector(feature)
 
 
-def build_entity_feature(entity_id, text_features, structure_features, global_features, local_features, args):
-    """
-    构造最终实体表示。
+def get_feature_with_mask(entity_id, feature_dict, dim, modality_name):
+    """返回归一化特征和存在标记；缺失时返回 0 向量和 False。"""
+    if entity_id not in feature_dict:
+        return np.zeros(dim, dtype=np.float32), False
+    feature = np.asarray(feature_dict[entity_id], dtype=np.float32).reshape(-1)
+    if feature.shape[0] != dim:
+        raise ValueError(f"Unexpected {modality_name} feature dim for Entity ID {entity_id}: {feature.shape[0]} != {dim}")
+    return normalize_vector(feature), True
 
-    T, S, G, L 均为 768 维并分别 L2-normalize。
 
-    K = normalize(T + S)
+def build_modality_matrices(entity_ids, feature_dict, dim, modality_name, device):
+    """构造某一模态的特征矩阵和实体可用性 mask。"""
+    features = []
+    masks = []
+    for entity_id in entity_ids:
+        feature, exists = get_feature_with_mask(entity_id, feature_dict, dim, modality_name)
+        features.append(feature)
+        masks.append(exists)
+    features = torch.from_numpy(np.stack(features)).float().to(device)
+    masks = torch.tensor(masks, dtype=torch.bool, device=device)
+    return features, masks
 
-    当 G、L 都存在：
-        SG = cosine(G, K)
-        SL = cosine(L, K)
-        V = [SG * G ; SL * L]
 
-    只有 G：
-        V = [G ; 0]
+def masked_multimodal_similarity(left_ids, right_ids, text_features, structure_features, global_features, local_features, args, device):
+    """各模态独立算 cosine；仅双方都存在的模态参与，最后对有效模态取平均。"""
+    modalities = [
+        ("text", text_features),
+        ("structure", structure_features),
+        ("global", global_features),
+        ("local", local_features),
+    ]
 
-    只有 L：
-        V = [0 ; L]
+    sim_sum = torch.zeros((len(left_ids), len(right_ids)), dtype=torch.float32, device=device)
+    valid_count = torch.zeros_like(sim_sum)
 
-    G、L 都缺失：
-        V = [0 ; 0]
+    for modality_name, feature_dict in modalities:
+        left_matrix, left_mask = build_modality_matrices(left_ids, feature_dict, args.feature_dim, modality_name, device)
+        right_matrix, right_mask = build_modality_matrices(right_ids, feature_dict, args.feature_dim, modality_name, device)
+        modality_sim = torch.matmul(left_matrix, right_matrix.transpose(0, 1))
+        pair_mask = left_mask[:, None] & right_mask[None, :]
+        sim_sum += modality_sim * pair_mask.float()
+        valid_count += pair_mask.float()
 
-    Final = [T ; S ; V]
-    """
-    text = get_required_feature(entity_id, text_features, args.feature_dim, "text")
-    structure = get_required_feature(entity_id, structure_features, args.feature_dim, "structure")
-    global_visual = get_optional_feature(entity_id, global_features, args.feature_dim, "global visual")
-    local_visual = get_optional_feature(entity_id, local_features, args.feature_dim, "local visual")
-
-    # text + graph 形成统一语义-结构参考表示。
-    knowledge = normalize_vector(text + structure)
-    zero_visual = np.zeros(args.feature_dim, dtype=np.float32)
-
-    if global_visual is not None and local_visual is not None:
-        sim_global = float(np.dot(global_visual, knowledge))
-        sim_local = float(np.dot(local_visual, knowledge))
-        weighted_global = sim_global * global_visual
-        weighted_local = sim_local * local_visual
-        visual = np.concatenate([weighted_global, weighted_local], axis=0)
-        visual_case = "both"
-    elif global_visual is not None:
-        sim_global = None
-        sim_local = None
-        visual = np.concatenate([global_visual, zero_visual], axis=0)
-        visual_case = "global_only"
-    elif local_visual is not None:
-        sim_global = None
-        sim_local = None
-        visual = np.concatenate([zero_visual, local_visual], axis=0)
-        visual_case = "local_only"
-    else:
-        sim_global = None
-        sim_local = None
-        visual = np.concatenate([zero_visual, zero_visual], axis=0)
-        visual_case = "none"
-
-    final_feature = np.concatenate([text, structure, visual], axis=0).astype(np.float32)
-    return final_feature, visual_case, sim_global, sim_local
+    # 极端情况下双方没有任何共同模态，相似度设为 0。
+    return torch.where(valid_count > 0, sim_sum / valid_count.clamp_min(1.0), torch.zeros_like(sim_sum))
 
 
 def main(args):
@@ -150,63 +137,30 @@ def main(args):
     local_features = normalize_feature_dict_keys(load_pickle(local_path))
     ref_pairs = load_ref_pairs(ref_pairs_path)
 
-    if not text_features:
-        raise ValueError(f"Text feature file is empty: {text_path}")
-    if not structure_features:
-        raise ValueError(f"Structure feature file is empty: {structure_path}")
+    if text_features:
+        text_dim = len(next(iter(text_features.values())))
+        if text_dim != args.feature_dim:
+            raise ValueError(f"Text feature dim must be {args.feature_dim}, but got {text_dim}. This script requires text and graph to share the CLIP-space dimension.")
 
-    text_dim = len(next(iter(text_features.values())))
-    structure_dim = len(next(iter(structure_features.values())))
+    if structure_features:
+        structure_dim = len(next(iter(structure_features.values())))
+        if structure_dim != args.feature_dim:
+            raise ValueError(f"Structure feature dim must be {args.feature_dim}, but got {structure_dim}. Please use the regenerated 768-d structure feature.")
 
-    if text_dim != args.feature_dim:
-        raise ValueError(f"Text feature dim must be {args.feature_dim}, but got {text_dim}. This script requires text and graph to share the CLIP-space dimension.")
-    if structure_dim != args.feature_dim:
-        raise ValueError(f"Structure feature dim must be {args.feature_dim}, but got {structure_dim}. Please use the regenerated 768-d structure feature.")
+    left_ids = [left_id for left_id, _ in ref_pairs]
+    right_ids = [right_id for _, right_id in ref_pairs]
 
-    left_features = []
-    right_features = []
-    valid_pairs = []
-
-    missing_text = 0
-    missing_structure = 0
-    visual_counts_left = {"both": 0, "global_only": 0, "local_only": 0, "none": 0}
-    visual_counts_right = {"both": 0, "global_only": 0, "local_only": 0, "none": 0}
-    sim_global_values = []
-    sim_local_values = []
-
-    for left_id, right_id in ref_pairs:
-        if left_id not in text_features or right_id not in text_features:
-            missing_text += 1
-            continue
-
-        if left_id not in structure_features or right_id not in structure_features:
-            missing_structure += 1
-            continue
-
-        left_feature, left_case, left_sg, left_sl = build_entity_feature(left_id, text_features, structure_features, global_features, local_features, args)
-        right_feature, right_case, right_sg, right_sl = build_entity_feature(right_id, text_features, structure_features, global_features, local_features, args)
-
-        left_features.append(left_feature)
-        right_features.append(right_feature)
-        valid_pairs.append((left_id, right_id))
-
-        visual_counts_left[left_case] += 1
-        visual_counts_right[right_case] += 1
-
-        if left_sg is not None:
-            sim_global_values.append(left_sg)
-            sim_local_values.append(left_sl)
-        if right_sg is not None:
-            sim_global_values.append(right_sg)
-            sim_local_values.append(right_sl)
-
-    if not valid_pairs:
-        raise ValueError("No valid ref_pairs can be evaluated.")
-
-    left_features = torch.from_numpy(np.stack(left_features)).float().to(device)
-    right_features = torch.from_numpy(np.stack(right_features)).float().to(device)
-
-    final_dim = args.feature_dim * 4
+    missing_text_left = sum(entity_id not in text_features for entity_id in left_ids)
+    missing_text_right = sum(entity_id not in text_features for entity_id in right_ids)
+    missing_structure_left = sum(entity_id not in structure_features for entity_id in left_ids)
+    missing_structure_right = sum(entity_id not in structure_features for entity_id in right_ids)
+    missing_global_left = sum(entity_id not in global_features for entity_id in left_ids)
+    missing_global_right = sum(entity_id not in global_features for entity_id in right_ids)
+    missing_local_left = sum(entity_id not in local_features for entity_id in left_ids)
+    missing_local_right = sum(entity_id not in local_features for entity_id in right_ids)
+    local_left_count = len(left_ids) - missing_local_left
+    local_right_count = len(right_ids) - missing_local_right
+    aligned_both_local = sum(left_id in local_features and right_id in local_features for left_id, right_id in ref_pairs)
 
     print(f"Device: {device}")
     print(f"Dataset: {args.data_split}")
@@ -215,36 +169,26 @@ def main(args):
     print(f"Global visual feature: {global_path}")
     print(f"Local visual feature: {local_path}")
     print(f"Feature dim per modality: {args.feature_dim}")
-    print(f"Final feature dim: {final_dim}")
     print(f"Test pairs: {len(ref_pairs)}")
-    print(f"Valid test pairs: {len(valid_pairs)}")
-    print(f"Skipped pairs due to missing text: {missing_text}")
-    print(f"Skipped pairs due to missing structure: {missing_structure}")
+    print(f"Missing text in KG1: {missing_text_left}")
+    print(f"Missing text in KG2: {missing_text_right}")
+    print(f"Missing structure in KG1: {missing_structure_left}")
+    print(f"Missing structure in KG2: {missing_structure_right}")
+    print(f"Missing global in KG1: {missing_global_left}")
+    print(f"Missing global in KG2: {missing_global_right}")
+    print(f"Missing local in KG1: {missing_local_left}")
+    print(f"Missing local in KG2: {missing_local_right}")
+    print(f"KG1 entities with local: {local_left_count}")
+    print(f"KG2 entities with local: {local_right_count}")
+    print(f"Aligned pairs with local on both sides: {aligned_both_local}")
 
-    print("\nKG1 visual availability:")
-    print(f"  both: {visual_counts_left['both']}")
-    print(f"  global only: {visual_counts_left['global_only']}")
-    print(f"  local only: {visual_counts_left['local_only']}")
-    print(f"  none: {visual_counts_left['none']}")
-
-    print("\nKG2 visual availability:")
-    print(f"  both: {visual_counts_right['both']}")
-    print(f"  global only: {visual_counts_right['global_only']}")
-    print(f"  local only: {visual_counts_right['local_only']}")
-    print(f"  none: {visual_counts_right['none']}")
-
-    if sim_global_values:
-        print(f"\nBoth-visual entities used for weighting: {len(sim_global_values)}")
-        print(f"Mean SG: {np.mean(sim_global_values):.6f}")
-        print(f"Mean SL: {np.mean(sim_local_values):.6f}")
-
-    sim_lr = cosine_similarity_matrix(left_features, right_features)
+    sim_lr = masked_multimodal_similarity(left_ids, right_ids, text_features, structure_features, global_features, local_features, args, device)
 
     if args.csls:
         sim_lr = csls_similarity(sim_lr, k=args.csls_k, m=args.m_csls)
 
-    metrics_lr, _ = evaluate_similarity(sim_lr)
-    metrics_rl, _ = evaluate_similarity(sim_lr.transpose(0, 1))
+    metrics_lr, ranks_lr = evaluate_similarity(sim_lr)
+    metrics_rl, ranks_rl = evaluate_similarity(sim_lr.transpose(0, 1))
 
     print()
     print_metrics("KG1 -> KG2", metrics_lr)
@@ -259,7 +203,7 @@ def main(args):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="DBP15K graph-text-visual similarity fusion")
+    parser = argparse.ArgumentParser(description="DBP15K masked multimodal similarity fusion")
     parser.add_argument("--data_split", default="zh_en", type=str, choices=["zh_en", "ja_en", "fr_en"])
     parser.add_argument("--text_name", default="txt_feature_without_surface.pkl", type=str)
     parser.add_argument("--structure_name", default="structure_feature.pkl", type=str)
