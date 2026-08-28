@@ -113,7 +113,7 @@ if __name__ == "__main__":
     parser.add_argument("--lr", default=1e-3, type=float)
     parser.add_argument("--clip", default=1.1, type=float)
     parser.add_argument("--random_seed", default=3408, type=int)
-    parser.add_argument("--hidden_units", default="300,300,300", type=str)
+    parser.add_argument("--hidden_units", default="768,768,768", type=str)
     parser.add_argument("--heads", default="2,2", type=str)
     parser.add_argument("--dropout", default=0.4, type=float)
     parser.add_argument("--attn_dropout", default=0.0, type=float)

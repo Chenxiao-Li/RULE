@@ -14,7 +14,7 @@ ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if ROOT_DIR not in sys.path:
     sys.path.insert(0, ROOT_DIR)
 
-from utiles.tools import set_seed, read_entity_ids, read_pairs, read_triples, uild_edge_index, GATStructureEncoder, RobustAlignmentLoss, save_feature_pkl
+from utiles.tools import set_seed, read_entity_ids, read_pairs, read_triples, build_edge_index, GATStructureEncoder, RobustAlignmentLoss, save_feature_pkl
 
 def main(args):
     set_seed(args.random_seed)
@@ -112,7 +112,7 @@ if __name__ == "__main__":
     parser.add_argument("--lr", default=1e-3, type=float)
     parser.add_argument("--clip", default=1.1, type=float)
     parser.add_argument("--random_seed", default=3408, type=int)
-    parser.add_argument("--hidden_units", default="300,300,300", type=str)
+    parser.add_argument("--hidden_units", default="768,768,768", type=str)
     parser.add_argument("--heads", default="2,2", type=str)
     parser.add_argument("--dropout", default=0.4, type=float)
     parser.add_argument("--attn_dropout", default=0.0, type=float)
