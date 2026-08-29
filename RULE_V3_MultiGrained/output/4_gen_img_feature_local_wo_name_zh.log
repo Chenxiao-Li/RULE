@@ -1,0 +1,85 @@
+Dataset: zh_en
+Local image folder: ./data/DBP15K/zh_en/seg_images/without_name
+Output path: ./data/pkls/DBP15k/zh_en/img_feature_local_without_name.pkl
+Device: cuda:0
+Total entities: 38960
+Processed new: 100, total saved: 100
+Processed new: 200, total saved: 200
+Processed new: 300, total saved: 300
+Processed new: 400, total saved: 400
+Processed new: 500, total saved: 500
+Processed new: 600, total saved: 600
+Processed new: 700, total saved: 700
+Processed new: 800, total saved: 800
+Processed new: 900, total saved: 900
+Processed new: 1000, total saved: 1000
+Processed new: 1100, total saved: 1100
+Processed new: 1200, total saved: 1200
+Processed new: 1300, total saved: 1300
+Processed new: 1400, total saved: 1400
+Processed new: 1500, total saved: 1500
+Processed new: 1600, total saved: 1600
+Processed new: 1700, total saved: 1700
+Processed new: 1800, total saved: 1800
+Processed new: 1900, total saved: 1900
+Processed new: 2000, total saved: 2000
+Processed new: 2100, total saved: 2100
+Processed new: 2200, total saved: 2200
+Processed new: 2300, total saved: 2300
+Processed new: 2400, total saved: 2400
+Processed new: 2500, total saved: 2500
+Processed new: 2600, total saved: 2600
+Processed new: 2700, total saved: 2700
+Processed new: 2800, total saved: 2800
+Processed new: 2900, total saved: 2900
+Processed new: 3000, total saved: 3000
+Processed new: 3100, total saved: 3100
+Processed new: 3200, total saved: 3200
+Processed new: 3300, total saved: 3300
+Processed new: 3400, total saved: 3400
+Processed new: 3500, total saved: 3500
+Processed new: 3600, total saved: 3600
+Processed new: 3700, total saved: 3700
+Processed new: 3800, total saved: 3800
+Processed new: 3900, total saved: 3900
+Processed new: 4000, total saved: 4000
+Processed new: 4100, total saved: 4100
+Processed new: 4200, total saved: 4200
+Processed new: 4300, total saved: 4300
+Processed new: 4400, total saved: 4400
+Processed new: 4500, total saved: 4500
+Processed new: 4600, total saved: 4600
+Processed new: 4700, total saved: 4700
+Processed new: 4800, total saved: 4800
+Processed new: 4900, total saved: 4900
+Processed new: 5000, total saved: 5000
+Processed new: 5100, total saved: 5100
+Processed new: 5200, total saved: 5200
+Processed new: 5300, total saved: 5300
+Processed new: 5400, total saved: 5400
+Processed new: 5500, total saved: 5500
+Processed new: 5600, total saved: 5600
+Processed new: 5700, total saved: 5700
+Processed new: 5800, total saved: 5800
+Processed new: 5900, total saved: 5900
+Processed new: 6000, total saved: 6000
+Processed new: 6100, total saved: 6100
+Processed new: 6200, total saved: 6200
+Processed new: 6300, total saved: 6300
+Processed new: 6400, total saved: 6400
+Processed new: 6500, total saved: 6500
+Processed new: 6600, total saved: 6600
+Processed new: 6700, total saved: 6700
+Processed new: 6800, total saved: 6800
+Processed new: 6900, total saved: 6900
+Processed new: 7000, total saved: 7000
+Processed new: 7100, total saved: 7100
+Processed new: 7200, total saved: 7200
+
+Complete.
+Newly processed: 7249
+Existing skipped: 0
+Missing local images skipped: 31711
+Errors: 0
+Total saved features: 7249
+Saved to: ./data/pkls/DBP15k/zh_en/img_feature_local_without_name.pkl

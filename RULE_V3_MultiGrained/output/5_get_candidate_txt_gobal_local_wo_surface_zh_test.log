@@ -1,0 +1,37 @@
+Device: cuda:0
+Dataset: zh_en
+Text feature: /home/UNT/cl1179/code/RULE/data/pkls/DBP15K/zh_en/txt_feature_without_surface.pkl
+Structure feature: /home/UNT/cl1179/code/RULE/data/pkls/DBP15K/zh_en/structure_feature.pkl
+Global visual feature: /home/UNT/cl1179/code/RULE/data/pkls/DBP15K/zh_en/img_feature_global.pkl
+Local visual feature: /home/UNT/cl1179/code/RULE/data/pkls/DBP15K/zh_en/img_feature_local_without_name.pkl
+Feature dim per modality: 768
+Test pairs: 10500
+Missing text in KG1: 0
+Missing text in KG2: 0
+Missing structure in KG1: 0
+Missing structure in KG2: 0
+Missing global in KG1: 2171
+Missing global in KG2: 3208
+Missing local in KG1: 7942
+Missing local in KG2: 8088
+KG1 entities with local: 2558
+KG2 entities with local: 2412
+Aligned pairs with local on both sides: 953
+
+KG1 -> KG2
+Hits@1: 0.667143
+Hits@5: 0.844571
+Hits@10: 0.886762
+MRR: 0.745501
+
+KG2 -> KG1
+Hits@1: 0.671238
+Hits@5: 0.850095
+Hits@10: 0.890286
+MRR: 0.749604
+
+Average
+Hits@1: 0.669190
+Hits@5: 0.847333
+Hits@10: 0.888524
+MRR: 0.747553
